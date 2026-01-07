@@ -3,410 +3,230 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>ICARE FINANCE SOLUTION LIMITED | Insurance Broker Yvonne Chen</title>
-  <meta name="description" content="ICARE FINANCE SOLUTION LIMITED — Life & Health insurance advice in New Zealand. Work with insurance broker Yvonne Chen for tailored cover and clear guidance." />
+  <meta name="description" content="ICARE FINANCE SOLUTION LIMITED — Life & Health insurance advice in New Zealand." />
   <meta name="theme-color" content="#0B1220" />
-
-  <!-- Open Graph -->
   <meta property="og:title" content="ICARE FINANCE SOLUTION LIMITED" />
-  <meta property="og:description" content="Life & Health insurance advice by Yvonne Chen. Tailored cover. Clear guidance." />
+  <meta property="og:description" content="Life & Health insurance advice by Yvonne Chen." />
   <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"FinancialService",
+        "name":"ICARE FINANCE SOLUTION LIMITED",
+        "areaServed":"NZ",
+        "email":"yvonnechen@me.com",
+        "serviceType":["Life insurance","Health insurance","Insurance policy review"],
+        "employee":{"@id":"#yvonne"}
+      },
+      {
+        "@type":"Person",
+        "@id":"#yvonne",
+        "name":"Yvonne Chen",
+        "jobTitle":"Insurance Broker",
+        "email":"yvonnechen@me.com",
+        "worksFor":{"@type":"Organization","name":"ICARE FINANCE SOLUTION LIMITED"}
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-  <!-- Top Utility Bar -->
+<body data-page="home">
   <div class="topbar">
     <div class="container topbar__inner">
       <div class="topbar__left">
-        <span class="pill">NZ • Insurance Advice</span>
+        <span class="pill">NZ • Insurance</span>
         <span class="muted small">ICARE FINANCE SOLUTION LIMITED</span>
       </div>
       <div class="topbar__right">
-        <a class="toplink" href="#contact">Request a Call</a>
+        <a class="toplink" href="#contact" data-i18n="nav.contact">Contact</a>
       </div>
     </div>
   </div>
 
-  <!-- Header -->
   <header class="header" id="top">
     <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="ICARE Home">
-        <span class="brand__mark" aria-hidden="true"></span>
+      <a class="brand" href="index.html">
+        <span class="brand__mark"></span>
         <span class="brand__text">
           <strong>ICARE</strong>
           <span>FINANCE SOLUTION LIMITED</span>
         </span>
       </a>
 
-      <nav class="nav" aria-label="Primary Navigation">
-        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
           <span></span><span></span><span></span>
         </button>
 
-        <!-- UPDATED: multi-page nav -->
         <div class="nav__menu" id="navMenu">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="life-insurance.html">Life</a>
-          <a href="health-insurance.html">Health</a>
-          <a href="policy-review.html">Policy Review</a>
-          <a class="btn btn--small" href="#contact">Contact</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="life-insurance.html" data-i18n="nav.life">Life</a>
+          <a href="health-insurance.html" data-i18n="nav.health">Health</a>
+          <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
+          <a href="disclosure.html">Disclosure</a>
+          <a href="privacy.html">Privacy</a>
+          <a class="btn btn--small" href="#contact" data-i18n="nav.contact">Contact</a>
+
+          <div class="lang" role="group" aria-label="Language switch">
+            <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang__btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          </div>
         </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero Banner -->
     <section class="hero">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="container hero__inner">
         <div class="hero__copy">
-          <p class="kicker">Life & Health Insurance • Clear, Practical, Personal</p>
-          <h1>Protection that fits your life — not a one-size-fits-all policy.</h1>
-          <p class="lead">
-            <strong>ICARE FINANCE SOLUTION LIMITED</strong> helps individuals, families, and business owners
-            choose the right cover with confidence. Work directly with insurance broker
-            <strong>Yvonne Chen</strong> for tailored recommendations, plain-English explanations,
-            and support from application through to claims.
-          </p>
-
-          <div class="cta">
-            <a class="btn" href="#contact">Request a Call</a>
-            <a class="btn btn--ghost" href="#solutions">Explore Solutions</a>
-          </div>
+          <p class="kicker" data-i18n="home.kicker">Life & Health Insurance • Clear & Personal Advice</p>
+          <h1 data-i18n="home.h1">Insurance advice that fits your life — not generic policies.</h1>
+          <p class="lead" data-i18n="home.lead">ICARE FINANCE SOLUTION LIMITED provides clear, structured insurance advice for individuals and families in New Zealand. Work directly with insurance broker Yvonne Chen.</p>
 
           <div class="trust">
             <div class="trust__item">
-              <div class="trust__num">Independent</div>
-              <div class="trust__label">Advice aligned to you</div>
+              <div class="trust__num" data-i18n="home.trust1.t">Independent</div>
+              <div class="trust__label" data-i18n="home.trust1.d">Client-first advice</div>
             </div>
             <div class="trust__item">
-              <div class="trust__num">Transparent</div>
-              <div class="trust__label">Explain options & tradeoffs</div>
+              <div class="trust__num" data-i18n="home.trust2.t">Transparent</div>
+              <div class="trust__label" data-i18n="home.trust2.d">Clear explanations</div>
             </div>
             <div class="trust__item">
-              <div class="trust__num">Supportive</div>
-              <div class="trust__label">From review to claims</div>
+              <div class="trust__num" data-i18n="home.trust3.t">Supportive</div>
+              <div class="trust__label" data-i18n="home.trust3.d">From advice to claims</div>
             </div>
+          </div>
+
+          <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
+            <a class="btn" href="#contact" data-i18n="home.ctaContact">Contact Yvonne</a>
+            <a class="btn btn--ghost" href="#solutions" data-i18n="home.ctaServices">View Services</a>
           </div>
         </div>
 
         <aside class="hero__panel">
           <div class="glass">
-            <h3>Quick enquiry</h3>
-            <p class="muted small">We’ll reply with next steps and available times.</p>
+            <h3 data-i18n="home.panel.title">Get in touch</h3>
+            <p class="muted small" data-i18n="home.panel.desc">Email or WeChat for enquiries, reviews, or general questions.</p>
 
-            <form id="miniForm" class="form">
-              <label>
-                <span>Name</span>
-                <input name="name" placeholder="Your name" required />
-              </label>
-
-              <label>
-                <span>Topic</span>
-                <select name="topic" required>
-                  <option value="" selected disabled>Select one</option>
-                  <option>Life Insurance</option>
-                  <option>Health Insurance</option>
-                  <option>Policy review</option>
-                </select>
-              </label>
-
-              <label>
-                <span>Preferred time</span>
-                <input name="time" placeholder="e.g., Weekdays after 6pm" required />
-              </label>
-
-              <button class="btn btn--full" type="submit">Generate Message</button>
-              <p class="muted tiny">This form won’t send email automatically — it generates a message you can copy.</p>
-            </form>
-          </div>
-
-          <div class="mini-cards">
-            <div class="mini-card">
-              <div class="mini-icon" aria-hidden="true">🛡️</div>
-              <div>
-                <strong>Advice first</strong>
-                <div class="muted small">Understand, then decide</div>
+            <div class="mini-cards">
+              <div class="mini-card">
+                <div class="mini-icon" aria-hidden="true">📧</div>
+                <div>
+                  <strong data-i18n="home.panel.email">Email</strong>
+                  <div class="muted small">yvonnechen@me.com</div>
+                </div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-icon" aria-hidden="true">💬</div>
+                <div>
+                  <strong data-i18n="home.panel.wechat">WeChat</strong>
+                  <div class="muted small">yvonne_wechat</div>
+                </div>
               </div>
             </div>
-            <div class="mini-card">
-              <div class="mini-icon" aria-hidden="true">📄</div>
-              <div>
-                <strong>Application support</strong>
-                <div class="muted small">Less stress, fewer surprises</div>
-              </div>
-            </div>
+
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- Why -->
-    <section class="section" id="why">
-      <div class="container">
-        <div class="section__head">
-          <h2>Why work with ICARE?</h2>
-          <p class="muted">Better cover decisions come from clarity, structure, and someone who actually listens.</p>
-        </div>
-
-        <div class="grid why">
-          <article class="card">
-            <h3>Tailored recommendations</h3>
-            <p class="muted">Start with your goals and budget, then compare options clearly.</p>
-          </article>
-          <article class="card">
-            <h3>Clear tradeoffs</h3>
-            <p class="muted">No jargon — premiums, exclusions, waiting periods explained simply.</p>
-          </article>
-          <article class="card">
-            <h3>Ongoing review</h3>
-            <p class="muted">We review cover as your family, work, or finances change.</p>
-          </article>
-          <article class="card">
-            <h3>Claims support</h3>
-            <p class="muted">Guidance through documents and insurer communication when you need it most.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Solutions -->
     <section class="section section--alt" id="solutions">
       <div class="container">
         <div class="section__head">
-          <h2>Insurance solutions</h2>
-          <p class="muted">Choose a starting point — we’ll tailor from there.</p>
+          <h2 data-i18n="solutions.title">Insurance services</h2>
+          <p class="muted" data-i18n="solutions.subtitle">Clear guidance across key protection areas.</p>
         </div>
 
         <div class="grid solutions">
           <article class="solution">
-            <h3>Life Insurance</h3>
-            <p class="muted">Financial protection for your family if the unexpected happens.</p>
-            <ul>
-              <li>Sum insured planning</li>
-              <li>Debt & dependants</li>
-              <li>Policy structure</li>
-            </ul>
-            <div class="cta" style="margin-top:12px;">
-              <a class="btn btn--ghost" href="life-insurance.html">Learn more</a>
+            <h3 data-i18n="solutions.life.t">Life Insurance</h3>
+            <p class="muted" data-i18n="solutions.life.d">Financial protection for family and dependants.</p>
+            <div style="margin-top:12px;">
+              <a class="btn btn--ghost" href="life-insurance.html" data-i18n="solutions.life.btn">Learn more</a>
             </div>
           </article>
 
           <article class="solution">
-            <h3>Health Insurance</h3>
-            <p class="muted">Access private care sooner, with cover aligned to your needs.</p>
-            <ul>
-              <li>Core vs add-ons</li>
-              <li>Excess & limits</li>
-              <li>Pre-existing conditions</li>
-            </ul>
-            <div class="cta" style="margin-top:12px;">
-              <a class="btn btn--ghost" href="health-insurance.html">Learn more</a>
+            <h3 data-i18n="solutions.health.t">Health Insurance</h3>
+            <p class="muted" data-i18n="solutions.health.d">Access private healthcare with confidence.</p>
+            <div style="margin-top:12px;">
+              <a class="btn btn--ghost" href="health-insurance.html" data-i18n="solutions.health.btn">Learn more</a>
             </div>
           </article>
 
           <article class="solution solution--cta">
-            <h3>Policy Review</h3>
-            <p class="muted">Already insured? We can review and optimise your cover.</p>
-            <ul>
-              <li>Check gaps & duplicates</li>
-              <li>Improve value</li>
-              <li>Align to current needs</li>
-            </ul>
-            <a class="btn btn--full" href="policy-review.html">Start a review</a>
+            <h3 data-i18n="solutions.review.t">Policy Review</h3>
+            <p class="muted" data-i18n="solutions.review.d">Already insured? Review and optimise your cover.</p>
+            <a class="btn btn--full" href="policy-review.html" data-i18n="solutions.review.btn">Start a review</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Insurers -->
-    <section class="section" id="insurers">
+    <section class="section" id="advisor">
       <div class="container">
         <div class="section__head">
-          <h2>Insurance providers</h2>
-          <p class="muted">We can advise across these providers (and others where applicable).</p>
-        </div>
-
-        <div class="insurers">
-          <div class="insurer">AIA</div>
-          <div class="insurer">Southern Cross</div>
-          <div class="insurer">Partners Life</div>
-          <div class="insurer">Chubb Life</div>
-        </div>
-
-        <p class="tiny muted">
-          Provider availability and policy terms are subject to insurer underwriting and approval.
-        </p>
-      </div>
-    </section>
-
-    <!-- Advisor -->
-    <section class="section section--alt" id="advisor">
-      <div class="container">
-        <div class="section__head">
-          <h2>Meet your insurance broker</h2>
-          <p class="muted">Direct, practical advice — and someone you can actually reach.</p>
+          <h2 data-i18n="advisor.title">Your insurance broker</h2>
         </div>
 
         <div class="advisor">
           <div class="advisor__photo">
             <img class="headshot" src="assets/yvonne.jpg" alt="Yvonne Chen" />
           </div>
-
           <div class="advisor__body">
             <h3>Yvonne Chen</h3>
-            <p class="role">Insurance Broker • ICARE FINANCE SOLUTION LIMITED</p>
-            <p class="muted">
-              I help clients make confident cover decisions with clear explanations and structured options.
-              Whether you’re starting from scratch or reviewing existing policies, I’ll guide you through
-              the details and help you choose what makes sense for your life and budget.
-            </p>
-
-            <div class="bullets">
-              <div class="bullet">✓ Plain-English comparisons</div>
-              <div class="bullet">✓ Life & Health cover planning</div>
-              <div class="bullet">✓ Application & claims support</div>
-            </div>
-
-            <div class="cta">
-              <a class="btn" href="#contact">Contact Yvonne</a>
-              <a class="btn btn--ghost" href="#insurers">View Providers</a>
-            </div>
+            <p class="role" data-i18n="advisor.role">Insurance Broker</p>
+            <p class="muted" data-i18n="advisor.bio">I help clients understand insurance clearly and choose cover that matches their life stage, priorities, and budget.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section" id="testimonials">
+    <section class="section section--alt" id="contact">
       <div class="container">
         <div class="section__head">
-          <h2>What clients say</h2>
-          <p class="muted">Replace these with real reviews when you’re ready.</p>
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p class="muted" data-i18n="contact.subtitle">Direct contact — no forms required.</p>
         </div>
 
-        <div class="grid quotes">
-          <figure class="quote">
-            <blockquote>“Yvonne explained everything clearly and helped me choose cover that actually matches my situation.”</blockquote>
-            <figcaption>— Client, Auckland</figcaption>
-          </figure>
-          <figure class="quote">
-            <blockquote>“Fast, professional, and supportive — especially during the paperwork and follow-ups.”</blockquote>
-            <figcaption>— Client, Wellington</figcaption>
-          </figure>
-          <figure class="quote">
-            <blockquote>“The comparison was simple and transparent. I understood the tradeoffs before committing.”</blockquote>
-            <figcaption>— Client, Christchurch</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
+        <div class="panel">
+          <div class="contact-links">
+            <a class="cl" href="mailto:yvonnechen@me.com">
+              <span class="cl__k" data-i18n="contact.email">Email</span>
+              <span class="cl__v">yvonnechen@me.com</span>
+            </a>
 
-    <!-- Contact -->
-    <section class="section section--alt contact" id="contact">
-      <div class="container">
-        <div class="section__head">
-          <h2>Contact</h2>
-          <p class="muted">Fill the form to generate a message you can send via email/DM.</p>
-        </div>
-
-        <div class="grid contact__grid">
-          <div class="panel glass">
-            <form id="contactForm" class="form">
-              <div class="grid two">
-                <label>
-                  <span>Name</span>
-                  <input name="name" placeholder="Your name" required />
-                </label>
-                <label>
-                  <span>Your contact</span>
-                  <input name="contact" placeholder="Email / phone / WeChat" required />
-                </label>
-              </div>
-
-              <label>
-                <span>Topic</span>
-                <select name="topic" required>
-                  <option value="" selected disabled>Select one</option>
-                  <option>Life Insurance</option>
-                  <option>Health Insurance</option>
-                  <option>Policy review</option>
-                </select>
-              </label>
-
-              <label>
-                <span>Tell us a bit about your situation</span>
-                <textarea name="notes" rows="4" placeholder="e.g., family, mortgage, income, existing cover..." required></textarea>
-              </label>
-
-              <div class="grid two">
-                <label>
-                  <span>Best time to call</span>
-                  <input name="time" placeholder="e.g., Tue 1–3pm" required />
-                </label>
-                <label>
-                  <span>Location (optional)</span>
-                  <input name="location" placeholder="e.g., Auckland" />
-                </label>
-              </div>
-
-              <button class="btn btn--full" type="submit">Generate copyable message</button>
-
-              <div class="copybox" id="copyBox" hidden>
-                <div class="copybox__head">
-                  <strong>Copy this message</strong>
-                  <button class="btn btn--small btn--ghost" type="button" id="copyBtn">Copy</button>
-                </div>
-                <pre id="copyText"></pre>
-              </div>
-            </form>
-          </div>
-
-          <aside class="panel">
-            <h3>ICARE FINANCE SOLUTION LIMITED</h3>
-            <p class="muted small">Direct contact:</p>
-
-            <div class="contact-links">
-              <a class="cl" href="mailto:yvonnechen@me.com">
-                <span class="cl__k">Email</span>
-                <span class="cl__v">yvonnechen@me.com</span>
-              </a>
-
-              <a class="cl" href="#" onclick="return false;">
-                <span class="cl__k">WeChat</span>
-                <span class="cl__v">yvonne_wechat</span>
-              </a>
-
-              <div class="cl cl--plain">
-                <span class="cl__k">Broker</span>
-                <span class="cl__v">Yvonne Chen</span>
-              </div>
-
-              <div class="cl cl--plain">
-                <span class="cl__k">Services</span>
-                <span class="cl__v">Life • Health</span>
-              </div>
-
-              <div class="cl cl--plain">
-                <span class="cl__k">Providers</span>
-                <span class="cl__v">AIA • Southern Cross • Partners Life • Chubb Life</span>
-              </div>
+            <div class="cl cl--plain">
+              <span class="cl__k" data-i18n="contact.wechat">WeChat</span>
+              <span class="cl__v">yvonne_wechat</span>
             </div>
 
-            <div class="divider"></div>
-            <p class="tiny muted">
-              Disclaimer: This website provides general information only and does not consider your personal circumstances.
-              Insurance terms, conditions, and acceptance are subject to insurer approval.
-            </p>
-          </aside>
+            <div class="cl cl--plain">
+              <span class="cl__k" data-i18n="contact.services">Services</span>
+              <span class="cl__v">Life • Health • Policy Review</span>
+            </div>
+
+            <div class="cl cl--plain">
+              <span class="cl__k" data-i18n="contact.providers">Providers</span>
+              <span class="cl__v">AIA • Southern Cross • Partners Life • Chubb Life</span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <p class="tiny muted" data-i18n="contact.disclaimer">Disclaimer: This website provides general information only and does not consider your personal circumstances. Insurance acceptance, terms, and conditions are subject to the insurer’s underwriting and policy wording.</p>
         </div>
       </div>
     </section>
@@ -416,20 +236,21 @@
     <div class="container footer__inner">
       <div class="footer__left">
         <div class="brand brand--footer">
-          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__mark"></span>
           <span class="brand__text">
             <strong>ICARE</strong>
             <span>FINANCE SOLUTION LIMITED</span>
           </span>
         </div>
-        <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED. All rights reserved.</p>
+        <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED</p>
       </div>
 
       <div class="footer__links">
         <a href="life-insurance.html">Life</a>
         <a href="health-insurance.html">Health</a>
         <a href="policy-review.html">Policy Review</a>
-        <a href="#contact">Contact</a>
+        <a href="disclosure.html">Disclosure</a>
+        <a href="privacy.html">Privacy</a>
         <a href="#top">Back to top ↑</a>
       </div>
     </div>
