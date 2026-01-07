@@ -5,37 +5,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy | ICARE FINANCE SOLUTION LIMITED</title>
   <meta name="description" content="Privacy policy for ICARE FINANCE SOLUTION LIMITED." />
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:title" content="Privacy Policy | ICARE FINANCE SOLUTION LIMITED" />
+  <meta property="og:description" content="Privacy policy: how we collect, use, store, and protect personal information." />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"FinancialService",
+        "name":"ICARE FINANCE SOLUTION LIMITED",
+        "areaServed":"NZ",
+        "email":"yvonnechen@me.com",
+        "serviceType":["Life insurance","Health insurance","Insurance policy review","Privacy"],
+        "employee":{"@id":"#yvonne"}
+      },
+      {
+        "@type":"Person",
+        "@id":"#yvonne",
+        "name":"Yvonne Chen",
+        "jobTitle":"Insurance Broker",
+        "email":"yvonnechen@me.com",
+        "worksFor":{"@type":"Organization","name":"ICARE FINANCE SOLUTION LIMITED"}
+      }
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body data-page="privacy">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="pill">NZ • Insurance</span>
+        <span class="muted small">ICARE FINANCE SOLUTION LIMITED</span>
+      </div>
+      <div class="topbar__right">
+        <a class="toplink" href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Unified Header -->
   <header class="header" id="top">
     <div class="container header__inner">
-      <a class="brand" href="index.html"><span class="brand__mark"></span><span class="brand__text"><strong>ICARE</strong><span>FINANCE SOLUTION LIMITED</span></span></a>
+      <a class="brand" href="index.html">
+        <span class="brand__mark"></span>
+        <span class="brand__text">
+          <strong>ICARE</strong>
+          <span>FINANCE SOLUTION LIMITED</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="life-insurance.html" data-i18n="nav.life">Life</a>
+          <a href="health-insurance.html" data-i18n="nav.health">Health</a>
+          <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
+          <a href="disclosure.html">Disclosure</a>
+          <a href="privacy.html">Privacy</a>
+          <a class="btn btn--small" href="index.html#contact" data-i18n="nav.contact">Contact</a>
+
+          <div class="lang" role="group" aria-label="Language switch">
+            <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang__btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
 
   <main>
     <section class="section">
       <div class="container">
-        <h1 data-i18n="privacy.title"></h1>
-        <p class="muted" data-i18n="privacy.subtitle"></p>
+        <div class="section__head">
+          <h1 data-i18n="privacy.title">Privacy Policy</h1>
+          <p class="muted" data-i18n="privacy.subtitle">This policy explains how ICARE FINANCE SOLUTION LIMITED collects, uses, discloses, and protects personal information.</p>
+        </div>
 
         <div class="grid quotes">
-          <figure class="quote"><blockquote data-i18n="privacy.collect.h"></blockquote><figcaption data-i18n="privacy.collect.b"></figcaption></figure>
-          <figure class="quote"><blockquote data-i18n="privacy.use.h"></blockquote><figcaption data-i18n="privacy.use.b"></figcaption></figure>
-          <figure class="quote"><blockquote data-i18n="privacy.share.h"></blockquote><figcaption data-i18n="privacy.share.b"></figcaption></figure>
-          <figure class="quote"><blockquote data-i18n="privacy.storage.h"></blockquote><figcaption data-i18n="privacy.storage.b"></figcaption></figure>
-          <figure class="quote"><blockquote data-i18n="privacy.rights.h"></blockquote><figcaption data-i18n="privacy.rights.b"></figcaption></figure>
-          <figure class="quote"><blockquote data-i18n="privacy.contact.h"></blockquote><figcaption data-i18n="privacy.contact.b"></figcaption></figure>
+          <figure class="quote">
+            <blockquote data-i18n="privacy.collect.h">What we collect</blockquote>
+            <figcaption data-i18n="privacy.collect.b">...</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote data-i18n="privacy.use.h">How we use your information</blockquote>
+            <figcaption data-i18n="privacy.use.b">...</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote data-i18n="privacy.share.h">Who we share it with</blockquote>
+            <figcaption data-i18n="privacy.share.b">...</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote data-i18n="privacy.storage.h">Storage & security</blockquote>
+            <figcaption data-i18n="privacy.storage.b">...</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote data-i18n="privacy.rights.h">Access & correction</blockquote>
+            <figcaption data-i18n="privacy.rights.b">...</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote data-i18n="privacy.contact.h">Contact</blockquote>
+            <figcaption data-i18n="privacy.contact.b">...</figcaption>
+          </figure>
         </div>
+
+        <p class="tiny muted" style="margin-top:18px;" data-i18n="privacy.updated">Last updated: 2026</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED</p>
+      <div class="footer__left">
+        <div class="brand brand--footer">
+          <span class="brand__mark"></span>
+          <span class="brand__text">
+            <strong>ICARE</strong>
+            <span>FINANCE SOLUTION LIMITED</span>
+          </span>
+        </div>
+        <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="life-insurance.html">Life</a>
+        <a href="health-insurance.html">Health</a>
+        <a href="policy-review.html">Policy Review</a>
+        <a href="disclosure.html">Disclosure</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
