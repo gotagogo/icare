@@ -3,61 +3,34 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Disclosure | ICARE FINANCE SOLUTION LIMITED</title>
-  <meta name="description" content="Financial advice disclosure for ICARE FINANCE SOLUTION LIMITED." />
-  <meta name="theme-color" content="#0B1220" />
-  <meta property="og:title" content="Disclosure | ICARE FINANCE SOLUTION LIMITED" />
-  <meta property="og:description" content="Financial advice disclosure: scope of advice, remuneration, conflicts of interest, and complaints process." />
-  <meta property="og:type" content="website" />
 
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"FinancialService",
-        "name":"ICARE FINANCE SOLUTION LIMITED",
-        "areaServed":"NZ",
-        "email":"yvonnechen@me.com",
-        "serviceType":["Life insurance","Health insurance","Insurance policy review","Disclosure"],
-        "employee":{"@id":"#yvonne"}
-      },
-      {
-        "@type":"Person",
-        "@id":"#yvonne",
-        "name":"Yvonne Chen",
-        "jobTitle":"Insurance Broker",
-        "email":"yvonnechen@me.com",
-        "worksFor":{"@type":"Organization","name":"ICARE FINANCE SOLUTION LIMITED"}
-      }
-    ]
-  }
-  </script>
+  <!-- SEO (script.js 會依語言/頁面覆寫 title/description；這裡先放合理預設) -->
+  <title>Disclosure Statement | Yvonne Chen (NZ)</title>
+  <meta name="description" content="Disclosure statement for financial advice services provided by Yvonne Chen under FAP ICARE (FSP ABCD1234) and the FSCL dispute resolution scheme." />
+
+  <!-- Canonical / OG -->
+  <link rel="canonical" href="https://yourdomain.co.nz/disclosure.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Disclosure Statement | Yvonne Chen (NZ)" />
+  <meta property="og:description" content="Important information about how advice is provided, fees, conflicts of interest, and complaints process (NZ)." />
+  <meta property="og:image" content="assets/og.jpg" />
+  <meta property="og:url" content="https://yourdomain.co.nz/disclosure.html" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body data-page="disclosure">
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <div class="topbar__left">
-        <span class="pill">NZ • Insurance</span>
-        <span class="muted small">ICARE FINANCE SOLUTION LIMITED</span>
-      </div>
-      <div class="topbar__right">
-        <a class="toplink" href="index.html#contact" data-i18n="nav.contact">Contact</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ✅ Unified Header -->
+  <!-- =============== Unified Header =============== -->
   <header class="header" id="top">
     <div class="container header__inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
         <span class="brand__mark"></span>
         <span class="brand__text">
-          <strong>ICARE</strong>
-          <span>FINANCE SOLUTION LIMITED</span>
+          <strong>Yvonne Chen</strong>
+          <span class="tiny muted" style="display:block; margin-top:2px;">
+            <span data-lang-inline="en">Life &amp; Health Insurance Adviser • New Zealand</span>
+            <span data-lang-inline="zh" style="display:none;">人壽與健康保險顧問 • 紐西蘭</span>
+          </span>
         </span>
       </a>
 
@@ -71,9 +44,17 @@
           <a href="life-insurance.html" data-i18n="nav.life">Life</a>
           <a href="health-insurance.html" data-i18n="nav.health">Health</a>
           <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
-          <a href="disclosure.html">Disclosure</a>
-          <a href="privacy.html">Privacy</a>
-          <a class="btn btn--small" href="index.html#contact" data-i18n="nav.contact">Contact</a>
+
+          <a href="disclosure.html">
+            <span data-lang-inline="en">Disclosure</span>
+            <span data-lang-inline="zh" style="display:none;">揭露聲明</span>
+          </a>
+          <a href="privacy.html">
+            <span data-lang-inline="en">Privacy</span>
+            <span data-lang-inline="zh" style="display:none;">隱私權政策</span>
+          </a>
+
+          <a class="btn btn--small" href="mailto:yvonnechen@me.com" data-i18n="nav.contact">Contact</a>
 
           <div class="lang" role="group" aria-label="Language switch">
             <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
@@ -84,75 +65,435 @@
     </div>
   </header>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <div class="section__head">
-          <h1 data-i18n="disc.title">Financial advice disclosure (NZ)</h1>
-          <p class="muted" data-i18n="disc.note">This information is provided to help you decide whether to seek, obtain, or act on our financial advice service.</p>
+  <!-- =============== Hero =============== -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <!-- EN -->
+      <div data-lang-block="en">
+        <div class="glass hero__panel">
+          <div class="kicker">Disclosure Statement</div>
+          <h1>Important information about how advice is provided.</h1>
+          <p class="lead">
+            This page explains the services offered, who Yvonne works with, how she is paid, and how to make a complaint.
+            Please read this information before receiving advice.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=Disclosure%20question">Ask a question</a>
+            <a class="btn" href="privacy.html">Privacy policy</a>
+          </div>
         </div>
-
-        <div class="grid quotes">
-          <figure class="quote">
-            <blockquote data-i18n="disc.licensing">Licensing & provider details</blockquote>
-            <figcaption data-i18n="disc.licensing.body">...</figcaption>
-          </figure>
-
-          <figure class="quote">
-            <blockquote data-i18n="disc.scope">Nature & scope of advice</blockquote>
-            <figcaption data-i18n="disc.scope.body">...</figcaption>
-          </figure>
-
-          <figure class="quote">
-            <blockquote data-i18n="disc.remuneration">Fees, commissions & incentives</blockquote>
-            <figcaption data-i18n="disc.remuneration.body">...</figcaption>
-          </figure>
-
-          <figure class="quote">
-            <blockquote data-i18n="disc.conflicts">Conflicts of interest</blockquote>
-            <figcaption data-i18n="disc.conflicts.body">...</figcaption>
-          </figure>
-
-          <figure class="quote">
-            <blockquote data-i18n="disc.complaints">Complaints & dispute resolution</blockquote>
-            <figcaption data-i18n="disc.complaints.body">...</figcaption>
-          </figure>
-
-          <figure class="quote">
-            <blockquote data-i18n="disc.disclaimer">Disclaimer</blockquote>
-            <figcaption data-i18n="disc.disclaimer.body">...</figcaption>
-          </figure>
-        </div>
-
-        <p class="tiny muted" style="margin-top:18px;" data-i18n="disc.updated">Last updated: 2026</p>
       </div>
-    </section>
-  </main>
 
+      <!-- ZH -->
+      <div data-lang-block="zh" style="display:none">
+        <div class="glass hero__panel">
+          <div class="kicker">揭露聲明</div>
+          <h1>關於理財建議提供方式的重要資訊</h1>
+          <p class="lead">
+            本頁面說明服務內容、合作保險公司、報酬方式、利益衝突管理與申訴流程。
+            建議你在接受理財建議前先閱讀。
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=%E6%8F%AD%E9%9C%B2%E8%AA%AA%E6%98%8E%E5%95%8F%E9%A1%8C">詢問問題</a>
+            <a class="btn" href="privacy.html">隱私權政策</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right-side summary -->
+      <aside class="glass">
+        <div class="kicker" style="margin-bottom:12px">
+          <span data-lang-inline="en">Key details</span>
+          <span data-lang-inline="zh" style="display:none;">重點資訊</span>
+        </div>
+
+        <div class="grid" style="grid-template-columns:1fr; gap:12px">
+          <div class="card">
+            <strong>
+              <span data-lang-inline="en">FAP</span>
+              <span data-lang-inline="zh" style="display:none;">FAP</span>
+            </strong>
+            <p class="tiny muted" style="margin:8px 0 0"><strong>ICARE</strong></p>
+          </div>
+
+          <div class="card">
+            <strong>
+              <span data-lang-inline="en">FSP number</span>
+              <span data-lang-inline="zh" style="display:none;">FSP 編號</span>
+            </strong>
+            <p class="tiny muted" style="margin:8px 0 0"><strong>ABCD1234</strong></p>
+          </div>
+
+          <div class="card">
+            <strong>
+              <span data-lang-inline="en">External dispute resolution</span>
+              <span data-lang-inline="zh" style="display:none;">外部爭議處理</span>
+            </strong>
+            <p class="tiny muted" style="margin:8px 0 0"><strong>FSCL</strong></p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- =============== Content =============== -->
+  <section class="section">
+    <div class="container">
+      <!-- EN -->
+      <div data-lang-block="en">
+        <div class="section__head">
+          <h2>Who provides the advice</h2>
+          <p class="muted" style="margin:0">Regulatory information (New Zealand).</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="card">
+            <h3 style="margin-top:0">Financial Advice Provider (FAP)</h3>
+            <p class="muted">
+              Financial advice is provided under the Financial Advice Provider (FAP): <strong>ICARE</strong>.
+              The FSP number is <strong>ABCD1234</strong>.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">How to contact</h3>
+            <p class="muted" style="margin-bottom:0">
+              Email: <a href="mailto:yvonnechen@me.com">yvonnechen@me.com</a><br />
+              WeChat: <strong>yvonne_wechat</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>Services and scope</h2>
+          <p class="muted" style="margin:0">What advice can be provided on.</p>
+        </div>
+
+        <div class="card">
+          <p class="muted" style="margin:0">
+            Yvonne provides financial advice relating to personal insurance, including (where appropriate):
+            life insurance, health insurance, trauma/medical cover, income protection, mortgage protection,
+            and business/shareholder protection. Advice may include recommendations on setting up new cover,
+            reviewing existing policies, and helping clients understand policy terms and options.
+          </p>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>Provider partners</h2>
+          <p class="muted" style="margin:0">Insurers Yvonne may place business with (not limited to every insurer in the market).</p>
+        </div>
+
+        <div class="card">
+          <p class="muted" style="margin:0">
+            Yvonne commonly works with: <strong>AIA</strong>, <strong>Southern Cross</strong>, <strong>Partners Life</strong>, and <strong>Chubb Life</strong>.
+            Recommendations will be based on your needs and circumstances and may not include every provider in the market.
+          </p>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>Fees, commissions and other benefits</h2>
+          <p class="muted" style="margin:0">How Yvonne may be paid.</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="card">
+            <h3 style="margin-top:0">Client fees</h3>
+            <p class="muted">
+              In many cases, no direct fee is charged to you for advice. If a fee is payable in your situation,
+              it will be discussed with you and agreed before any work that incurs a fee is undertaken.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">Insurer commission / benefits</h3>
+            <p class="muted">
+              Yvonne may receive commission from the insurer if you take out a policy, and may receive ongoing commission while the policy remains in force.
+              From time to time, insurers may also offer training, resources, or support. These arrangements are managed under ICARE’s policies.
+            </p>
+          </div>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>Conflicts of interest and incentives</h2>
+          <p class="muted" style="margin:0">How conflicts are identified and managed.</p>
+        </div>
+
+        <div class="card">
+          <p class="muted" style="margin:0">
+            Because commissions may be received, a conflict of interest could arise.
+            ICARE has policies and processes to manage conflicts and ensure advice prioritises clients’ interests.
+            Where relevant, the nature of remuneration and any conflicts will be disclosed as part of your advice process.
+          </p>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>Complaints process</h2>
+          <p class="muted" style="margin:0">How to raise a concern and what happens next.</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="card">
+            <h3 style="margin-top:0">Step 1: Contact us</h3>
+            <p class="muted" style="margin-bottom:0">
+              If you have a complaint, please email <a href="mailto:yvonnechen@me.com">yvonnechen@me.com</a> with the subject line “Complaint”.
+              We will acknowledge and respond within <strong>5 working days</strong>.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">Step 2: External dispute resolution</h3>
+            <p class="muted" style="margin-bottom:0">
+              If we cannot resolve your complaint, you may contact the external dispute resolution scheme:
+              <strong>Financial Services Complaints Limited (FSCL)</strong>.
+              (You can find their contact details on their website.)
+            </p>
+          </div>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>Privacy</h2>
+          <p class="muted" style="margin:0">How personal information may be used.</p>
+        </div>
+
+        <div class="card">
+          <p class="muted" style="margin:0">
+            To provide advice and arrange insurance, Yvonne may collect and use personal information.
+            Please refer to the <a href="privacy.html">Privacy Policy</a> for more details.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:14px;">
+          <p class="tiny muted" style="margin:0">
+            <strong>Important:</strong> The information on this website is general in nature and does not take into account your personal circumstances.
+            Please seek personalised advice before making insurance decisions.
+          </p>
+        </div>
+      </div>
+
+      <!-- ZH -->
+      <div data-lang-block="zh" style="display:none">
+        <div class="section__head">
+          <h2>由誰提供理財建議</h2>
+          <p class="muted" style="margin:0">紐西蘭監管相關資訊。</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="card">
+            <h3 style="margin-top:0">Financial Advice Provider（FAP）</h3>
+            <p class="muted">
+              理財建議於 Financial Advice Provider（FAP）：<strong>ICARE</strong> 架構下提供。
+              FSP 編號為 <strong>ABCD1234</strong>。
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">聯絡方式</h3>
+            <p class="muted" style="margin-bottom:0">
+              Email：<a href="mailto:yvonnechen@me.com">yvonnechen@me.com</a><br />
+              WeChat：<strong>yvonne_wechat</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>服務內容與範圍</h2>
+          <p class="muted" style="margin:0">可提供哪些保險相關理財建議。</p>
+        </div>
+
+        <div class="card">
+          <p class="muted" style="margin:0">
+            Yvonne 提供與個人保險相關的理財建議，視個人狀況可能涵蓋：
+            人壽保險、健康保險、重大疾病／創傷與醫療保障、收入保障、房貸保障，以及企業／股東保障。
+            建議內容可能包含：新保障規劃、既有保單檢視、條款說明與方案比較等。
+          </p>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>合作保險公司</h2>
+          <p class="muted" style="margin:0">可能協助投保的保險公司（不代表涵蓋市場上所有保險公司）。</p>
+        </div>
+
+        <div class="card">
+          <p class="muted" style="margin:0">
+            Yvonne 常見合作的保險公司包含：<strong>AIA</strong>、<strong>Southern Cross</strong>、<strong>Partners Life</strong>、<strong>Chubb Life</strong>。
+            建議將以你的需求與個人狀況為基礎，並不一定包含市場上所有保險公司。
+          </p>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>費用、佣金與其他利益</h2>
+          <p class="muted" style="margin:0">Yvonne 可能如何收取報酬。</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="card">
+            <h3 style="margin-top:0">客戶費用</h3>
+            <p class="muted">
+              多數情況下，客戶不需直接支付諮詢費用。若在你的情況下需要收費，會在產生任何需付費的工作前，
+              先與你說明並取得同意。
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">保險公司佣金／其他支持</h3>
+            <p class="muted">
+              若你投保成功，Yvonne 可能會向保險公司收取一次性與續期（ongoing）佣金。
+              有時保險公司也可能提供教育訓練、資源或支持；這些安排會依 ICARE 的政策進行管理。
+            </p>
+          </div>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>利益衝突與誘因管理</h2>
+          <p class="muted" style="margin:0">如何識別與管理利益衝突。</p>
+        </div>
+
+        <div class="card">
+          <p class="muted" style="margin:0">
+            因可能收取佣金，可能產生利益衝突。ICARE 設有相關政策與流程，用以管理利益衝突並確保建議優先考量客戶利益。
+            若與你的建議相關，將在理財建議流程中揭露報酬方式與可能的利益衝突。
+          </p>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>申訴流程</h2>
+          <p class="muted" style="margin:0">如何提出申訴，以及後續處理方式。</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="card">
+            <h3 style="margin-top:0">步驟 1：先與我們聯絡</h3>
+            <p class="muted" style="margin-bottom:0">
+              若你要提出申訴，請 email 至 <a href="mailto:yvonnechen@me.com">yvonnechen@me.com</a>，
+              主旨請註明「Complaint／申訴」。我們將在 <strong>5 個工作天</strong> 內回覆。
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">步驟 2：外部爭議處理機構</h3>
+            <p class="muted" style="margin-bottom:0">
+              若無法與我們達成解決方案，你可聯絡外部爭議處理機構：
+              <strong>Financial Services Complaints Limited（FSCL）</strong>。
+              （你可至 FSCL 官方網站查詢其聯絡方式。）
+            </p>
+          </div>
+        </div>
+
+        <div class="section__head" style="margin-top:22px;">
+          <h2>隱私</h2>
+          <p class="muted" style="margin:0">個人資料可能如何被使用。</p>
+        </div>
+
+        <div class="card">
+          <p class="muted" style="margin:0">
+            為提供理財建議與協助投保，Yvonne 可能需要蒐集與使用你的個人資訊。
+            詳情請參閱 <a href="privacy.html">隱私權政策</a>。
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:14px;">
+          <p class="tiny muted" style="margin:0">
+            <strong>提醒：</strong> 本網站內容僅供一般資訊參考，未考量你的個人狀況。做出保險決策前，請先取得個人化建議。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============== Compliance note (consistent) =============== -->
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <p class="tiny muted" style="margin:0">
+          <strong>Important information:</strong>
+          Financial advice is provided under Financial Advice Provider (FAP): <strong>ICARE</strong> (FSP number: <strong>ABCD1234</strong>).
+          The external dispute resolution scheme is <strong>FSCL</strong>.
+          Any complaints will be acknowledged and responded to within <strong>5 working days</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== Unified Footer =============== -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__left">
         <div class="brand brand--footer">
           <span class="brand__mark"></span>
           <span class="brand__text">
-            <strong>ICARE</strong>
-            <span>FINANCE SOLUTION LIMITED</span>
+            <strong>Yvonne Chen</strong>
+            <span class="tiny muted" style="display:block; margin-top:2px;">
+              <span data-lang-inline="en">Life &amp; Health Insurance Adviser • New Zealand</span>
+              <span data-lang-inline="zh" style="display:none;">人壽與健康保險顧問 • 紐西蘭</span>
+            </span>
           </span>
         </div>
-        <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED</p>
+        <p class="tiny muted">© <span id="year"></span> Yvonne Chen</p>
       </div>
 
       <div class="footer__links">
-        <a href="life-insurance.html">Life</a>
-        <a href="health-insurance.html">Health</a>
-        <a href="policy-review.html">Policy Review</a>
-        <a href="disclosure.html">Disclosure</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="#top">Back to top ↑</a>
+        <a href="life-insurance.html" data-i18n="nav.life">Life</a>
+        <a href="health-insurance.html" data-i18n="nav.health">Health</a>
+        <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
+
+        <a href="disclosure.html">
+          <span data-lang-inline="en">Disclosure</span>
+          <span data-lang-inline="zh" style="display:none;">揭露聲明</span>
+        </a>
+        <a href="privacy.html">
+          <span data-lang-inline="en">Privacy</span>
+          <span data-lang-inline="zh" style="display:none;">隱私權政策</span>
+        </a>
+
+        <a href="#top">
+          <span data-lang-inline="en">Back to top ↑</span>
+          <span data-lang-inline="zh" style="display:none;">回到頂部 ↑</span>
+        </a>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Language block + inline toggle (works with existing script.js) -->
+  <script>
+    (function(){
+      function currentLang(){
+        const saved = localStorage.getItem("site_lang");
+        return (saved === "zh") ? "zh" : "en";
+      }
+      function applyLang(){
+        const lang = currentLang();
+
+        // long blocks
+        document.querySelectorAll("[data-lang-block]").forEach(el => {
+          el.style.display = (el.getAttribute("data-lang-block") === lang) ? "" : "none";
+        });
+
+        // inline spans
+        document.querySelectorAll("[data-lang-inline]").forEach(el => {
+          el.style.display = (el.getAttribute("data-lang-inline") === lang) ? "" : "none";
+        });
+
+        // align html lang
+        document.documentElement.lang = (lang === "zh") ? "zh-Hant" : "en-NZ";
+      }
+
+      applyLang();
+
+      const obs = new MutationObserver(applyLang);
+      obs.observe(document.documentElement, { attributes:true, attributeFilter:["lang"] });
+
+      document.addEventListener("click", (e) => {
+        if (e.target.closest(".lang__btn")) setTimeout(applyLang, 0);
+      });
+
+      const y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
