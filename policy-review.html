@@ -3,53 +3,427 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Policy Review | ICARE FINANCE SOLUTION LIMITED</title>
-  <meta name="description" content="Insurance policy review service by ICARE FINANCE SOLUTION LIMITED." />
+
+  <!-- SEO (script.js 會依語言/頁面覆寫 title/description；這裡先放合理預設) -->
+  <title>Policy Review | Yvonne Chen (NZ)</title>
+  <meta name="description" content="Insurance policy review in New Zealand — understand what you have, what’s missing, and what still fits your life today." />
+
+  <!-- Canonical / OG -->
+  <link rel="canonical" href="https://yourdomain.co.nz/policy-review.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Policy Review | Yvonne Chen (NZ)" />
+  <meta property="og:description" content="A clear, no-pressure review of your current cover — so you know what you have and what it means." />
+  <meta property="og:image" content="assets/og.jpg" />
+  <meta property="og:url" content="https://yourdomain.co.nz/policy-review.html" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body data-page="review">
+  <!-- =============== Unified Header =============== -->
   <header class="header" id="top">
     <div class="container header__inner">
-      <a class="brand" href="index.html"><span class="brand__mark"></span><span class="brand__text"><strong>ICARE</strong><span>FINANCE SOLUTION LIMITED</span></span></a>
-      <nav class="nav">
-        <button class="nav__toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <a class="brand" href="index.html" aria-label="Go to homepage">
+        <span class="brand__mark"></span>
+        <span class="brand__text">
+          <strong>Yvonne Chen</strong>
+          <span class="tiny muted" style="display:block; margin-top:2px;">
+            <span data-lang-inline="en">Life &amp; Health Insurance Adviser • New Zealand</span>
+            <span data-lang-inline="zh" style="display:none;">人壽與健康保險顧問 • 紐西蘭</span>
+          </span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+
         <div class="nav__menu" id="navMenu">
           <a href="index.html" data-i18n="nav.home">Home</a>
           <a href="life-insurance.html" data-i18n="nav.life">Life</a>
           <a href="health-insurance.html" data-i18n="nav.health">Health</a>
           <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
-          <a href="disclosure.html">Disclosure</a>
-          <a href="privacy.html">Privacy</a>
-          <div class="lang">
-            <button class="lang__btn" data-lang="en">EN</button>
-            <button class="lang__btn" data-lang="zh">中文</button>
+
+          <a href="disclosure.html">
+            <span data-lang-inline="en">Disclosure</span>
+            <span data-lang-inline="zh" style="display:none;">揭露聲明</span>
+          </a>
+          <a href="privacy.html">
+            <span data-lang-inline="en">Privacy</span>
+            <span data-lang-inline="zh" style="display:none;">隱私權政策</span>
+          </a>
+
+          <a class="btn btn--small" href="mailto:yvonnechen@me.com" data-i18n="nav.contact">Contact</a>
+
+          <div class="lang" role="group" aria-label="Language switch">
+            <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang__btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
           </div>
         </div>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <p class="kicker" data-i18n="subpages.kicker.review"></p>
-        <h1 data-i18n="subpages.h1.review"></h1>
-        <p class="lead" data-i18n="subpages.lead.review"></p>
-      </div>
-    </section>
-  </main>
+  <!-- =============== Hero =============== -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
 
+    <div class="container hero__inner">
+      <!-- EN -->
+      <div data-lang-block="en">
+        <div class="glass hero__panel">
+          <div class="kicker">Policy Review</div>
+          <h1>Know what you have — and whether it still fits.</h1>
+          <p class="lead">
+            A policy review is a simple, no-pressure way to understand your current cover, what it actually does,
+            and whether it still matches your life today.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=Policy%20review%20request">Request a review</a>
+            <a class="btn" href="index.html#advisor">About Yvonne</a>
+          </div>
+
+          <div class="trust" aria-label="Highlights">
+            <div class="trust__item">
+              <div class="trust__num">Clear</div>
+              <div class="trust__label">Plain-English explanation</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__num">No pressure</div>
+              <div class="trust__label">Review first, decide later</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__num">Practical</div>
+              <div class="trust__label">Built around your current life</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ZH -->
+      <div data-lang-block="zh" style="display:none">
+        <div class="glass hero__panel">
+          <div class="kicker">保單檢視</div>
+          <h1>把你「現在擁有的保障」看懂，並確認是否仍適合你。</h1>
+          <p class="lead">
+            保單檢視是一個輕鬆、無壓力的方式，協助你了解目前的保障內容、實際保障範圍與限制，
+            以及它是否仍符合你現在的人生階段與需求。
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=%E4%BF%9D%E5%96%AE%E6%AA%A2%E8%A6%96%E7%94%B3%E8%AB%8B">申請保單檢視</a>
+            <a class="btn" href="index.html#advisor">關於 Yvonne</a>
+          </div>
+
+          <div class="trust" aria-label="重點">
+            <div class="trust__item">
+              <div class="trust__num">清楚</div>
+              <div class="trust__label">用白話說明條款</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__num">無壓力</div>
+              <div class="trust__label">先看懂再決定</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__num">務實</div>
+              <div class="trust__label">貼近你現在生活</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right-side panel (inline bilingual) -->
+      <aside class="glass">
+        <div class="kicker" style="margin-bottom:12px">
+          <span data-lang-inline="en">Good times to review</span>
+          <span data-lang-inline="zh" style="display:none;">適合做保單檢視的時機</span>
+        </div>
+
+        <div class="grid" style="grid-template-columns:1fr; gap:12px">
+          <div class="card">
+            <strong>
+              <span data-lang-inline="en">New home or mortgage</span>
+              <span data-lang-inline="zh" style="display:none;">買房／房貸變動</span>
+            </strong>
+            <p class="tiny muted" style="margin:8px 0 0">
+              <span data-lang-inline="en">Debt changes can affect what “enough cover” means.</span>
+              <span data-lang-inline="zh" style="display:none;">負債變動會影響「需要多少保障」的判斷。</span>
+            </p>
+          </div>
+
+          <div class="card">
+            <strong>
+              <span data-lang-inline="en">Family changes</span>
+              <span data-lang-inline="zh" style="display:none;">家庭狀況改變</span>
+            </strong>
+            <p class="tiny muted" style="margin:8px 0 0">
+              <span data-lang-inline="en">Marriage, kids, or dependants usually mean new priorities.</span>
+              <span data-lang-inline="zh" style="display:none;">結婚、生小孩或需要照顧的人變多，通常代表保障重點也會變。</span>
+            </p>
+          </div>
+
+          <div class="card">
+            <strong>
+              <span data-lang-inline="en">Work or income changes</span>
+              <span data-lang-inline="zh" style="display:none;">工作／收入改變</span>
+            </strong>
+            <p class="tiny muted" style="margin:8px 0 0">
+              <span data-lang-inline="en">New job, self-employed, or business growth—cover may need adjusting.</span>
+              <span data-lang-inline="zh" style="display:none;">換工作、自僱或企業成長時，保障常需要同步調整。</span>
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- =============== Content sections =============== -->
+  <section class="section">
+    <div class="container">
+      <!-- EN -->
+      <div data-lang-block="en">
+        <div class="section__head">
+          <h2>What you’ll get from a review</h2>
+          <p class="muted" style="margin:0">A clear summary of what you have and what it means.</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="card">
+            <h3 style="margin-top:0">Understand your cover</h3>
+            <p class="muted">
+              We break down each policy: what it covers, key limits, exclusions, and how claims typically work.
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">See what’s relevant now</h3>
+            <p class="muted">
+              Your life changes—so should your plan. We check what still fits and what may need an update.
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">Spot gaps or overlaps</h3>
+            <p class="muted">
+              Some people are underinsured; others pay for unnecessary duplication. The goal is clarity and value.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ZH -->
+      <div data-lang-block="zh" style="display:none">
+        <div class="section__head">
+          <h2>保單檢視你會得到什麼</h2>
+          <p class="muted" style="margin:0">把保障內容整理成你看得懂、用得上的重點。</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="card">
+            <h3 style="margin-top:0">看懂你目前的保障</h3>
+            <p class="muted">
+              逐一整理每張保單：保障範圍、額度/限制、除外責任，以及理賠時通常怎麼運作。
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">確認是否仍符合現在</h3>
+            <p class="muted">
+              人生會變，保障也該跟著調整。我們會一起確認哪些仍合適、哪些可能需要更新。
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">找出缺口或重複</h3>
+            <p class="muted">
+              有些人保障不足；也有人花錢買了不必要的重複。檢視的目標是更清楚、更有價值。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <!-- EN -->
+      <div data-lang-block="en">
+        <div class="section__head">
+          <h2>How the review works</h2>
+          <p class="muted" style="margin:0">Simple steps. No jargon. No pressure.</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="card">
+            <h3 style="margin-top:0">1) Share what you have</h3>
+            <p class="muted">
+              Send your policy documents or a summary. If you’re missing anything, we’ll help you identify what’s needed.
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">2) Review & explain</h3>
+            <p class="muted">
+              Yvonne will walk you through the key parts, highlight what matters most, and answer questions in plain language.
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">3) Next steps (if you want)</h3>
+            <p class="muted">
+              If there’s a better fit, we’ll outline options clearly. If everything looks right, you’ll leave with confidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px;">
+          <p class="muted" style="margin:0">
+            <strong>Note:</strong> A review doesn’t automatically mean changing insurers or buying more cover.
+            It’s about making sure your current plan still matches your life and goals.
+          </p>
+        </div>
+
+        <div style="margin-top:18px">
+          <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=Policy%20review%20request">Request a review</a>
+          <a class="btn" href="life-insurance.html" style="margin-left:10px;">Life insurance</a>
+          <a class="btn" href="health-insurance.html" style="margin-left:10px;">Health insurance</a>
+        </div>
+      </div>
+
+      <!-- ZH -->
+      <div data-lang-block="zh" style="display:none">
+        <div class="section__head">
+          <h2>保單檢視流程</h2>
+          <p class="muted" style="margin:0">步驟簡單、用詞清楚、全程無壓力。</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="card">
+            <h3 style="margin-top:0">1) 提供你現有資料</h3>
+            <p class="muted">
+              你可以傳保單檔案或保障摘要；若有缺漏，我們會協助你確認還需要哪些資料。
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">2) 逐項檢視並說明</h3>
+            <p class="muted">
+              Yvonne 會帶你看關鍵條款、整理重點差異，並用白話回答你的疑問。
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">3) 需要時再討論下一步</h3>
+            <p class="muted">
+              若有更合適的方案，會把選項講清楚；若你目前的保障已很合適，也能更安心地繼續維持。
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px;">
+          <p class="muted" style="margin:0">
+            <strong>提醒：</strong> 保單檢視不代表一定要換保險公司或一定要加保。
+            目標是確認「你現在的保障」是否仍符合你的生活與目標，讓你更清楚也更踏實。
+          </p>
+        </div>
+
+        <div style="margin-top:18px">
+          <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=%E4%BF%9D%E5%96%AE%E6%AA%A2%E8%A6%96%E7%94%B3%E8%AB%8B">申請保單檢視</a>
+          <a class="btn" href="life-insurance.html" style="margin-left:10px;">人壽保險</a>
+          <a class="btn" href="health-insurance.html" style="margin-left:10px;">健康保險</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== Compliance note =============== -->
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <p class="tiny muted" style="margin:0">
+          <strong>Important information:</strong>
+          Financial advice is provided under Financial Advice Provider (FAP): <strong>ICARE</strong> (FSP number: <strong>ABCD1234</strong>).
+          The external dispute resolution scheme is <strong>FSCL</strong>.
+          Any complaints will be acknowledged and responded to within <strong>5 working days</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== Unified Footer =============== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED</p>
+      <div class="footer__left">
+        <div class="brand brand--footer">
+          <span class="brand__mark"></span>
+          <span class="brand__text">
+            <strong>Yvonne Chen</strong>
+            <span class="tiny muted" style="display:block; margin-top:2px;">
+              <span data-lang-inline="en">Life &amp; Health Insurance Adviser • New Zealand</span>
+              <span data-lang-inline="zh" style="display:none;">人壽與健康保險顧問 • 紐西蘭</span>
+            </span>
+          </span>
+        </div>
+        <p class="tiny muted">© <span id="year"></span> Yvonne Chen</p>
+      </div>
+
       <div class="footer__links">
-        <a href="disclosure.html">Disclosure</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="life-insurance.html" data-i18n="nav.life">Life</a>
+        <a href="health-insurance.html" data-i18n="nav.health">Health</a>
+        <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
+
+        <a href="disclosure.html">
+          <span data-lang-inline="en">Disclosure</span>
+          <span data-lang-inline="zh" style="display:none;">揭露聲明</span>
+        </a>
+        <a href="privacy.html">
+          <span data-lang-inline="en">Privacy</span>
+          <span data-lang-inline="zh" style="display:none;">隱私權政策</span>
+        </a>
+
+        <a href="#top">
+          <span data-lang-inline="en">Back to top ↑</span>
+          <span data-lang-inline="zh" style="display:none;">回到頂部 ↑</span>
+        </a>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Language block + inline toggle (works with existing script.js) -->
+  <script>
+    (function(){
+      function currentLang(){
+        const saved = localStorage.getItem("site_lang");
+        return (saved === "zh") ? "zh" : "en";
+      }
+      function applyLang(){
+        const lang = currentLang();
+
+        // long blocks
+        document.querySelectorAll("[data-lang-block]").forEach(el => {
+          el.style.display = (el.getAttribute("data-lang-block") === lang) ? "" : "none";
+        });
+
+        // inline spans
+        document.querySelectorAll("[data-lang-inline]").forEach(el => {
+          el.style.display = (el.getAttribute("data-lang-inline") === lang) ? "" : "none";
+        });
+
+        // keep html lang aligned (optional)
+        document.documentElement.lang = (lang === "zh") ? "zh-Hant" : "en-NZ";
+      }
+
+      applyLang();
+
+      // Observe <html lang="..."> changes triggered by script.js
+      const obs = new MutationObserver(applyLang);
+      obs.observe(document.documentElement, { attributes:true, attributeFilter:["lang"] });
+
+      // Also handle direct clicks
+      document.addEventListener("click", (e) => {
+        if (e.target.closest(".lang__btn")) setTimeout(applyLang, 0);
+      });
+
+      // Footer year
+      const y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
