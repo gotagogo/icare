@@ -3,57 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Life Insurance Advice | ICARE FINANCE SOLUTION LIMITED | Yvonne Chen</title>
-  <meta name="description" content="Life insurance advice in New Zealand. Work with insurance broker Yvonne Chen at ICARE FINANCE SOLUTION LIMITED to structure cover for family, debt and long-term security." />
-  <meta name="theme-color" content="#0B1220" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Life Insurance Advice | ICARE FINANCE SOLUTION LIMITED" />
-  <meta property="og:description" content="Tailored life insurance advice by Yvonne Chen. Clear options, transparent tradeoffs, support through claims." />
-  <meta property="og:type" content="website" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+  <title>Life Insurance Advice | ICARE FINANCE SOLUTION LIMITED</title>
+  <meta name="description" content="Life insurance advice in New Zealand by ICARE FINANCE SOLUTION LIMITED." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <div class="topbar__left">
-        <span class="pill">NZ • Life Insurance</span>
-        <span class="muted small">ICARE FINANCE SOLUTION LIMITED</span>
-      </div>
-      <div class="topbar__right">
-        <a class="toplink" href="index.html#contact">Request a Call</a>
-      </div>
-    </div>
-  </div>
-
+<body data-page="life">
   <header class="header" id="top">
     <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="ICARE Home">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__text">
-          <strong>ICARE</strong>
-          <span>FINANCE SOLUTION LIMITED</span>
-        </span>
-      </a>
-
-      <nav class="nav" aria-label="Primary Navigation">
-        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-          <span></span><span></span><span></span>
-        </button>
-
+      <a class="brand" href="index.html"><span class="brand__mark"></span><span class="brand__text"><strong>ICARE</strong><span>FINANCE SOLUTION LIMITED</span></span></a>
+      <nav class="nav">
+        <button class="nav__toggle" id="navToggle"><span></span><span></span><span></span></button>
         <div class="nav__menu" id="navMenu">
-          <a href="index.html">Home</a>
-          <a href="life-insurance.html" aria-current="page">Life</a>
-          <a href="health-insurance.html">Health</a>
-          <a href="policy-review.html">Policy Review</a>
-          <a class="btn btn--small" href="index.html#contact">Contact</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="life-insurance.html" data-i18n="nav.life">Life</a>
+          <a href="health-insurance.html" data-i18n="nav.health">Health</a>
+          <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
+          <a href="disclosure.html">Disclosure</a>
+          <a href="privacy.html">Privacy</a>
+          <div class="lang">
+            <button class="lang__btn" data-lang="en">EN</button>
+            <button class="lang__btn" data-lang="zh">中文</button>
+          </div>
         </div>
       </nav>
     </div>
@@ -61,140 +32,20 @@
 
   <main>
     <section class="hero">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="container hero__inner">
-        <div class="hero__copy">
-          <p class="kicker">Life Insurance • Protection for what matters most</p>
-          <h1>Life insurance that supports your family, debt, and long-term plans.</h1>
-          <p class="lead">
-            Life cover helps protect your family’s financial stability if the unexpected happens.
-            Yvonne Chen will help you estimate an appropriate sum insured and structure cover in a way
-            that fits your budget and priorities.
-          </p>
-
-          <div class="cta">
-            <a class="btn" href="index.html#contact">Request a Call</a>
-            <a class="btn btn--ghost" href="#how">How it works</a>
-          </div>
-
-          <div class="trust">
-            <div class="trust__item">
-              <div class="trust__num">Family-first</div>
-              <div class="trust__label">Cover that matches dependants</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__num">Debt planning</div>
-              <div class="trust__label">Mortgage & liabilities considered</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__num">Clear structure</div>
-              <div class="trust__label">Simpler policies, fewer surprises</div>
-            </div>
-          </div>
-        </div>
-
-        <aside class="hero__panel">
-          <div class="glass">
-            <h3>Talk to Yvonne</h3>
-            <p class="muted small">Email: <a href="mailto:yvonnechen@me.com">yvonnechen@me.com</a><br/>WeChat: yvonne_wechat</p>
-
-            <div class="mini-cards">
-              <div class="mini-card">
-                <div class="mini-icon" aria-hidden="true">🧾</div>
-                <div>
-                  <strong>Sum insured guidance</strong>
-                  <div class="muted small">Simple & practical</div>
-                </div>
-              </div>
-              <div class="mini-card">
-                <div class="mini-icon" aria-hidden="true">🧠</div>
-                <div>
-                  <strong>Plain-English</strong>
-                  <div class="muted small">Tradeoffs explained</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="how">
       <div class="container">
-        <div class="section__head">
-          <h2>How life insurance planning works</h2>
-          <p class="muted">A simple process, tailored to your situation.</p>
-        </div>
-
-        <div class="grid why">
-          <article class="card">
-            <h3>1) Understand your goals</h3>
-            <p class="muted">Family support, debt repayment, future costs, or business needs.</p>
-          </article>
-          <article class="card">
-            <h3>2) Estimate cover amount</h3>
-            <p class="muted">We consider mortgage, income replacement, and dependants.</p>
-          </article>
-          <article class="card">
-            <h3>3) Compare policy options</h3>
-            <p class="muted">Premiums, exclusions, terms, and structure.</p>
-          </article>
-          <article class="card">
-            <h3>4) Apply with support</h3>
-            <p class="muted">We guide you through underwriting and documentation.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__head">
-          <h2>Common questions</h2>
-          <p class="muted">Quick answers to what clients ask most.</p>
-        </div>
-
-        <div class="grid quotes">
-          <figure class="quote">
-            <blockquote>How much cover do I need?</blockquote>
-            <figcaption>We’ll estimate based on debt, dependants, and your target support period.</figcaption>
-          </figure>
-          <figure class="quote">
-            <blockquote>Can I keep premiums affordable?</blockquote>
-            <figcaption>Yes — we can structure cover and review optional add-ons to fit your budget.</figcaption>
-          </figure>
-          <figure class="quote">
-            <blockquote>Which providers are available?</blockquote>
-            <figcaption>We advise across AIA, Partners Life, Chubb Life (and others where applicable).</figcaption>
-          </figure>
-        </div>
-
-        <div class="cta" style="margin-top:18px;">
-          <a class="btn" href="index.html#contact">Request a Call</a>
-          <a class="btn btn--ghost" href="health-insurance.html">Explore Health Insurance</a>
-        </div>
+        <p class="kicker" data-i18n="subpages.kicker.life"></p>
+        <h1 data-i18n="subpages.h1.life"></h1>
+        <p class="lead" data-i18n="subpages.lead.life"></p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="footer__left">
-        <div class="brand brand--footer">
-          <span class="brand__mark" aria-hidden="true"></span>
-          <span class="brand__text">
-            <strong>ICARE</strong>
-            <span>FINANCE SOLUTION LIMITED</span>
-          </span>
-        </div>
-        <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED. All rights reserved.</p>
-      </div>
-
+      <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED</p>
       <div class="footer__links">
-        <a href="life-insurance.html">Life</a>
-        <a href="health-insurance.html">Health</a>
-        <a href="policy-review.html">Policy Review</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="disclosure.html">Disclosure</a>
+        <a href="privacy.html">Privacy</a>
       </div>
     </div>
   </footer>
