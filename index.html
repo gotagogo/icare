@@ -1,181 +1,261 @@
 <!doctype html>
-<html lang="en-NZ" data-lang="en">
+<html lang="en-NZ">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <!-- SEO -->
-  <title>Yvonne Chen | Life & Health Insurance Adviser in New Zealand</title>
-  <meta name="description" content="Friendly, straightforward insurance advice across New Zealand. Life, health, trauma, income, mortgage and business protection." />
-  <link rel="canonical" href="https://yourdomain.co.nz/index.html" />
-
-  <!-- Open Graph -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ICARE FINANCE SOLUTION LIMITED | Insurance Broker Yvonne Chen</title>
+  <meta name="description" content="ICARE FINANCE SOLUTION LIMITED — Life & Health insurance advice in New Zealand." />
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:title" content="ICARE FINANCE SOLUTION LIMITED" />
+  <meta property="og:description" content="Life & Health insurance advice by Yvonne Chen." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Yvonne Chen | Life & Health Insurance Adviser (NZ)" />
-  <meta property="og:description" content="Clear, practical insurance advice for individuals, families and businesses across New Zealand." />
-  <meta property="og:image" content="assets/og.jpg" />
-  <meta property="og:url" content="https://yourdomain.co.nz/" />
 
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"FinancialService",
+        "name":"ICARE FINANCE SOLUTION LIMITED",
+        "areaServed":"NZ",
+        "email":"yvonnechen@me.com",
+        "serviceType":["Life insurance","Health insurance","Insurance policy review"],
+        "employee":{"@id":"#yvonne"}
+      },
+      {
+        "@type":"Person",
+        "@id":"#yvonne",
+        "name":"Yvonne Chen",
+        "jobTitle":"Insurance Broker",
+        "email":"yvonnechen@me.com",
+        "worksFor":{"@type":"Organization","name":"ICARE FINANCE SOLUTION LIMITED"}
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
 </head>
 
 <body data-page="home">
-
-<!-- ================= HEADER ================= -->
-<header class="site-header">
-  <div class="container header__inner">
-    <div class="brand">
-      <div class="logo">YC</div>
-      <div class="brand__text">
-        <strong>Yvonne Chen</strong>
-        <span data-i18n="header.subtitle">Life & Health Insurance Adviser • New Zealand</span>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="pill">NZ • Insurance</span>
+        <span class="muted small">ICARE FINANCE SOLUTION LIMITED</span>
+      </div>
+      <div class="topbar__right">
+        <a class="toplink" href="#contact" data-i18n="nav.contact">Contact</a>
       </div>
     </div>
+  </div>
 
-    <nav class="nav">
-      <a href="index.html" data-i18n="nav.home">Home</a>
-      <a href="life-insurance.html" data-i18n="nav.life">Life Insurance</a>
-      <a href="health-insurance.html" data-i18n="nav.health">Health Insurance</a>
-      <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
-      <a href="disclosure.html" data-i18n="nav.disclosure">Disclosure</a>
-      <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
-
-      <button class="lang__btn" type="button" aria-label="Switch language">
-        <span class="lang__tag">EN / 中文</span>
-      </button>
-
-      <a class="btn btn--primary" href="mailto:yvonnechen@me.com" data-i18n="nav.contact">
-        Email Yvonne
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark"></span>
+        <span class="brand__text">
+          <strong>ICARE</strong>
+          <span>FINANCE SOLUTION LIMITED</span>
+        </span>
       </a>
-    </nav>
-  </div>
-</header>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <div class="container hero__grid">
-    <div>
-      <h1 data-i18n="hero.title">
-        Friendly, straightforward insurance advice — built around your life.
-      </h1>
-      <p class="lead" data-i18n="hero.lead">
-        Helping individuals, families and business owners across New Zealand protect what matters most with clarity and care.
-      </p>
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
 
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="policy-review.html" data-i18n="hero.cta1">
-          Review my cover
-        </a>
-        <a class="btn" href="life-insurance.html" data-i18n="hero.cta2">
-          Life insurance
-        </a>
-        <a class="btn" href="health-insurance.html" data-i18n="hero.cta3">
-          Health insurance
-        </a>
+        <div class="nav__menu" id="navMenu">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="life-insurance.html" data-i18n="nav.life">Life</a>
+          <a href="health-insurance.html" data-i18n="nav.health">Health</a>
+          <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
+          <a href="disclosure.html">Disclosure</a>
+          <a href="privacy.html">Privacy</a>
+          <a class="btn btn--small" href="#contact" data-i18n="nav.contact">Contact</a>
+
+          <div class="lang" role="group" aria-label="Language switch">
+            <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang__btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="kicker" data-i18n="home.kicker">Life & Health Insurance • Clear & Personal Advice</p>
+          <h1 data-i18n="home.h1">Insurance advice that fits your life — not generic policies.</h1>
+          <p class="lead" data-i18n="home.lead">ICARE FINANCE SOLUTION LIMITED provides clear, structured insurance advice for individuals and families in New Zealand. Work directly with insurance broker Yvonne Chen.</p>
+
+          <div class="trust">
+            <div class="trust__item">
+              <div class="trust__num" data-i18n="home.trust1.t">Independent</div>
+              <div class="trust__label" data-i18n="home.trust1.d">Client-first advice</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__num" data-i18n="home.trust2.t">Transparent</div>
+              <div class="trust__label" data-i18n="home.trust2.d">Clear explanations</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__num" data-i18n="home.trust3.t">Supportive</div>
+              <div class="trust__label" data-i18n="home.trust3.d">From advice to claims</div>
+            </div>
+          </div>
+
+          <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
+            <a class="btn" href="#contact" data-i18n="home.ctaContact">Contact Yvonne</a>
+            <a class="btn btn--ghost" href="#solutions" data-i18n="home.ctaServices">View Services</a>
+          </div>
+        </div>
+
+        <aside class="hero__panel">
+          <div class="glass">
+            <h3 data-i18n="home.panel.title">Get in touch</h3>
+            <p class="muted small" data-i18n="home.panel.desc">Email or WeChat for enquiries, reviews, or general questions.</p>
+
+            <div class="mini-cards">
+              <div class="mini-card">
+                <div class="mini-icon" aria-hidden="true">📧</div>
+                <div>
+                  <strong data-i18n="home.panel.email">Email</strong>
+                  <div class="muted small">yvonnechen@me.com</div>
+                </div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-icon" aria-hidden="true">💬</div>
+                <div>
+                  <strong data-i18n="home.panel.wechat">WeChat</strong>
+                  <div class="muted small">yvonne_wechat</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="solutions">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="solutions.title">Insurance services</h2>
+          <p class="muted" data-i18n="solutions.subtitle">Clear guidance across key protection areas.</p>
+        </div>
+
+        <div class="grid solutions">
+          <article class="solution">
+            <h3 data-i18n="solutions.life.t">Life Insurance</h3>
+            <p class="muted" data-i18n="solutions.life.d">Financial protection for family and dependants.</p>
+            <div style="margin-top:12px;">
+              <a class="btn btn--ghost" href="life-insurance.html" data-i18n="solutions.life.btn">Learn more</a>
+            </div>
+          </article>
+
+          <article class="solution">
+            <h3 data-i18n="solutions.health.t">Health Insurance</h3>
+            <p class="muted" data-i18n="solutions.health.d">Access private healthcare with confidence.</p>
+            <div style="margin-top:12px;">
+              <a class="btn btn--ghost" href="health-insurance.html" data-i18n="solutions.health.btn">Learn more</a>
+            </div>
+          </article>
+
+          <article class="solution solution--cta">
+            <h3 data-i18n="solutions.review.t">Policy Review</h3>
+            <p class="muted" data-i18n="solutions.review.d">Already insured? Review and optimise your cover.</p>
+            <a class="btn btn--full" href="policy-review.html" data-i18n="solutions.review.btn">Start a review</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="advisor">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="advisor.title">Your insurance broker</h2>
+        </div>
+
+        <div class="advisor">
+          <div class="advisor__photo">
+            <img class="headshot" src="assets/yvonne.jpg" alt="Yvonne Chen" />
+          </div>
+          <div class="advisor__body">
+            <h3>Yvonne Chen</h3>
+            <p class="role" data-i18n="advisor.role">Insurance Broker</p>
+            <p class="muted" data-i18n="advisor.bio">I help clients understand insurance clearly and choose cover that matches their life stage, priorities, and budget.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p class="muted" data-i18n="contact.subtitle">Direct contact — no forms required.</p>
+        </div>
+
+        <div class="panel">
+          <div class="contact-links">
+            <a class="cl" href="mailto:yvonnechen@me.com">
+              <span class="cl__k" data-i18n="contact.email">Email</span>
+              <span class="cl__v">yvonnechen@me.com</span>
+            </a>
+
+            <div class="cl cl--plain">
+              <span class="cl__k" data-i18n="contact.wechat">WeChat</span>
+              <span class="cl__v">yvonne_wechat</span>
+            </div>
+
+            <div class="cl cl--plain">
+              <span class="cl__k" data-i18n="contact.services">Services</span>
+              <span class="cl__v">Life • Health • Policy Review</span>
+            </div>
+
+            <div class="cl cl--plain">
+              <span class="cl__k" data-i18n="contact.providers">Providers</span>
+              <span class="cl__v">AIA • Southern Cross • Partners Life • Chubb Life</span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <p class="tiny muted" data-i18n="contact.disclaimer">Disclaimer: This website provides general information only and does not consider your personal circumstances. Insurance acceptance, terms, and conditions are subject to the insurer’s underwriting and policy wording.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--footer">
+          <span class="brand__mark"></span>
+          <span class="brand__text">
+            <strong>ICARE</strong>
+            <span>FINANCE SOLUTION LIMITED</span>
+          </span>
+        </div>
+        <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="life-insurance.html">Life</a>
+        <a href="health-insurance.html">Health</a>
+        <a href="policy-review.html">Policy Review</a>
+        <a href="disclosure.html">Disclosure</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#top">Back to top ↑</a>
       </div>
     </div>
+  </footer>
 
-    <aside class="hero__card">
-      <h3 data-i18n="hero.sideTitle">Quick details</h3>
-      <ul>
-        <li data-i18n="hero.side1">15+ years banking experience</li>
-        <li data-i18n="hero.side2">Insurance focused since 2017</li>
-        <li data-i18n="hero.side3">Serving clients across NZ</li>
-      </ul>
-    </aside>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section class="section">
-  <div class="container narrow">
-
-    <h2 data-i18n="about.title">About Yvonne</h2>
-
-    <!-- English -->
-    <div data-lang-block="en">
-      <p>
-        With more than 15 years of banking experience and a strong focus on insurance since 2017, Yvonne brings a friendly, down-to-earth approach to helping people protect what matters most. She genuinely cares about making insurance easier to understand, giving clients confidence in their cover, and ensuring every recommendation is clear, relevant, and right for their situation.
-      </p>
-
-      <p>
-        Based on Auckland’s North Shore, Yvonne works with clients across New Zealand, supporting everyone from young families and self-employed professionals to growing businesses. She takes the time to listen and understand where her clients are in life, what they’re working towards, and the risks they may face, so she can put the right protection in place for today and the years ahead.
-      </p>
-
-      <p>
-        Yvonne specialises in health and life insurance, including trauma and medical cover, as well as mortgage and income protection. She also assists businesses with employee group cover and provides business and shareholder protection advice for owners and directors.
-      </p>
-
-      <p>
-        What Yvonne values most is building long-term relationships and being there when her clients need her most. Whether it’s helping with a claim, reviewing existing cover, or supporting major life changes like buying a home, starting a family, or launching a business, she is committed to offering guidance, clarity, and reassurance every step of the way.
-      </p>
-
-      <p>
-        If you’re looking for honest, straightforward advice and someone who truly has your best interests at heart, Yvonne would love to help.
-      </p>
-    </div>
-
-    <!-- Chinese -->
-    <div data-lang-block="zh" style="display:none">
-      <p>
-        Yvonne 擁有超過 15 年的銀行業經驗，並自 2017 年起專注於保險規劃。她以親切、務實的方式協助客戶守護最重要的人與事，致力於把保險說清楚、講明白，讓客戶真正了解自己的保障內容，並對每一項安排充滿信心。
-      </p>
-
-      <p>
-        Yvonne 目前於奧克蘭北岸服務，同時支援全紐西蘭各地客戶，服務對象涵蓋年輕家庭、自僱專業人士，以及成長中的企業。她會花時間傾聽，深入了解客戶所處的人生階段、努力的方向，以及可能面臨的風險，從而建立一套既符合現在、也能延續到未來的保障規劃。
-      </p>
-
-      <p>
-        Yvonne 專長於健康與人壽保險，包含重大疾病／創傷與醫療保障，同時也提供房貸與收入保障建議。對企業客戶而言，她亦能協助員工團體保險，以及公司與股東保障（Business / Shareholder Protection）等規劃。
-      </p>
-
-      <p>
-        對 Yvonne 來說，最重要的是與客戶建立長期信任，並在關鍵時刻成為真正可靠的支持。無論是協助理賠、檢視現有保單，或在人生重要轉折點（如買房、成家或創業）提供專業指引，她都會以清楚的說明與穩定的陪伴，讓客戶每一步都更安心。
-      </p>
-
-      <p>
-        如果你正在尋找誠懇、不繞圈、真正以你利益為優先的保險建議，Yvonne 很樂意與你聊聊。
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= COMPLIANCE ================= -->
-<section class="section section--muted">
-  <div class="container narrow compliance">
-    <p>
-      <strong>Important information:</strong><br />
-      Financial advice is provided under Financial Advice Provider (FAP): <strong>ICARE</strong> (FSP number: <strong>ABCD1234</strong>).
-      The external dispute resolution scheme is <strong>FSCL</strong>.
-      Any complaints will be acknowledged and responded to within <strong>5 working days</strong>.
-    </p>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer">
-  <div class="container footer__grid">
-    <div>
-      <p>© <span id="year"></span> Yvonne Chen. All rights reserved.</p>
-      <p class="small">
-        The information on this website is general in nature and does not take into account your personal circumstances.
-        Please seek personalised advice before making insurance decisions.
-      </p>
-    </div>
-
-    <div class="footer__links">
-      <a href="disclosure.html">Disclosure</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="mailto:yvonnechen@me.com">Email</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>

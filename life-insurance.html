@@ -3,329 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- SEO (script.js 會依語言/頁面覆寫 title/description；這裡先放合理預設) -->
-  <title>Life Insurance | Yvonne Chen (NZ)</title>
-  <meta name="description" content="Life insurance guidance in New Zealand — clear, practical advice for individuals, families and business owners." />
-
-  <!-- Canonical / OG -->
-  <link rel="canonical" href="https://yourdomain.co.nz/life-insurance.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Life Insurance | Yvonne Chen (NZ)" />
-  <meta property="og:description" content="Clear, practical life insurance guidance across New Zealand." />
-  <meta property="og:image" content="assets/og.jpg" />
-  <meta property="og:url" content="https://yourdomain.co.nz/life-insurance.html" />
-
+  <title>Life Insurance Advice | ICARE FINANCE SOLUTION LIMITED</title>
+  <meta name="description" content="Life insurance advice in New Zealand by ICARE FINANCE SOLUTION LIMITED." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body data-page="life">
-  <!-- =============== Unified Header =============== -->
   <header class="header" id="top">
     <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="Go to homepage">
-        <span class="brand__mark"></span>
-        <span class="brand__text">
-          <strong>Yvonne Chen</strong>
-          <span data-i18n="header.subtitle">Life & Health Insurance Adviser • New Zealand</span>
-        </span>
-      </a>
-
-      <nav class="nav" aria-label="Primary navigation">
-        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-
+      <a class="brand" href="index.html"><span class="brand__mark"></span><span class="brand__text"><strong>ICARE</strong><span>FINANCE SOLUTION LIMITED</span></span></a>
+      <nav class="nav">
+        <button class="nav__toggle" id="navToggle"><span></span><span></span><span></span></button>
         <div class="nav__menu" id="navMenu">
           <a href="index.html" data-i18n="nav.home">Home</a>
           <a href="life-insurance.html" data-i18n="nav.life">Life</a>
           <a href="health-insurance.html" data-i18n="nav.health">Health</a>
           <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
-          <a href="disclosure.html" data-i18n="nav.disclosure">Disclosure</a>
-          <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
-          <a class="btn btn--small" href="mailto:yvonnechen@me.com" data-i18n="nav.contact">Contact</a>
-
-          <div class="lang" role="group" aria-label="Language switch">
-            <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
-            <button class="lang__btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          <a href="disclosure.html">Disclosure</a>
+          <a href="privacy.html">Privacy</a>
+          <div class="lang">
+            <button class="lang__btn" data-lang="en">EN</button>
+            <button class="lang__btn" data-lang="zh">中文</button>
           </div>
         </div>
       </nav>
     </div>
   </header>
 
-  <!-- =============== Hero =============== -->
-  <section class="hero">
-    <div class="hero__bg" aria-hidden="true"></div>
-
-    <div class="container hero__inner">
-      <!-- EN -->
-      <div data-lang-block="en">
-        <div class="glass hero__panel">
-          <div class="kicker">Life Insurance</div>
-          <h1>Protect the people who rely on you — with cover that makes sense.</h1>
-          <p class="lead">
-            Life insurance is about creating financial breathing room when life takes an unexpected turn.
-            Yvonne helps you understand your options clearly and structure cover that fits your goals, budget, and responsibilities.
-          </p>
-
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=Life%20insurance%20enquiry">Email Yvonne</a>
-            <a class="btn" href="policy-review.html">Review my current cover</a>
-          </div>
-
-          <div class="trust" aria-label="Highlights">
-            <div class="trust__item">
-              <div class="trust__num">Clear</div>
-              <div class="trust__label">Explain options in plain English</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__num">Practical</div>
-              <div class="trust__label">Built around your real needs</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__num">Ongoing</div>
-              <div class="trust__label">Support as life changes</div>
-            </div>
-          </div>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="kicker" data-i18n="subpages.kicker.life"></p>
+        <h1 data-i18n="subpages.h1.life"></h1>
+        <p class="lead" data-i18n="subpages.lead.life"></p>
       </div>
+    </section>
+  </main>
 
-      <!-- ZH -->
-      <div data-lang-block="zh" style="display:none">
-        <div class="glass hero__panel">
-          <div class="kicker">人壽保險</div>
-          <h1>守護最重要的人——用清楚、合理的保障，為未來留一份安心。</h1>
-          <p class="lead">
-            人壽保險的核心，是在突發狀況發生時，讓家人或依靠你的人仍有足夠的財務緩衝。
-            Yvonne 會用好懂的方式解釋選項，並依你的目標、預算與責任，協助安排真正適合的保障。
-          </p>
-
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=%E4%BA%BA%E5%A3%BD%E4%BF%9D%E9%9A%AA%E8%AB%AE%E8%A9%A2">Email 聯絡</a>
-            <a class="btn" href="policy-review.html">檢視我現有的保障</a>
-          </div>
-
-          <div class="trust" aria-label="重點">
-            <div class="trust__item">
-              <div class="trust__num">清楚</div>
-              <div class="trust__label">用白話說明保障差異</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__num">務實</div>
-              <div class="trust__label">貼近你的實際需求</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__num">長期</div>
-              <div class="trust__label">人生不同階段持續支持</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right-side panel -->
-      <aside class="glass">
-        <div class="kicker" style="margin-bottom:12px">What life cover can help with</div>
-
-        <div class="grid" style="grid-template-columns:1fr; gap:12px">
-          <div class="card">
-            <strong>Income replacement</strong>
-            <p class="tiny muted" style="margin:8px 0 0">
-              Support your family’s living costs and day-to-day commitments.
-            </p>
-          </div>
-          <div class="card">
-            <strong>Debt & mortgage</strong>
-            <p class="tiny muted" style="margin:8px 0 0">
-              Reduce pressure from loans if something unexpected happens.
-            </p>
-          </div>
-          <div class="card">
-            <strong>Business continuity</strong>
-            <p class="tiny muted" style="margin:8px 0 0">
-              Help protect partners, shareholders, or key person responsibilities.
-            </p>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- =============== Content sections =============== -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head">
-        <h2>How we approach life insurance</h2>
-        <p class="muted" style="margin:0">Simple steps. Clear explanations. No pressure.</p>
-      </div>
-
-      <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="card">
-          <h3 style="margin-top:0">1) Understand your situation</h3>
-          <p class="muted">
-            We talk through your life stage, dependants, debts, goals, and what “peace of mind” looks like for you.
-          </p>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0">2) Compare options clearly</h3>
-          <p class="muted">
-            Yvonne explains how different cover types work, what they typically protect, and what to watch for in wording.
-          </p>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0">3) Put the right cover in place</h3>
-          <p class="muted">
-            When you’re comfortable with the plan, we help with applications, documentation, and keep things moving smoothly.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--alt">
-    <div class="container">
-      <!-- EN -->
-      <div data-lang-block="en">
-        <div class="section__head">
-          <h2>Common questions</h2>
-          <p class="muted" style="margin:0">A few quick answers to help you get started.</p>
-        </div>
-
-        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
-          <div class="card">
-            <h3 style="margin-top:0">Do I need life insurance if I’m single?</h3>
-            <p class="muted">
-              It depends. Some people want cover for debts, future family plans, or to protect business obligations. A quick chat helps clarify.
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">How much cover should I have?</h3>
-            <p class="muted">
-              There isn’t one “right” number. We usually look at living costs, debts, dependants, and timeframes—then match it to budget.
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">Will it cost more if I wait?</h3>
-            <p class="muted">
-              Premiums are often influenced by age and health. Planning earlier can give you more options, but we’ll work with where you’re at.
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">Can I review later?</h3>
-            <p class="muted">
-              Absolutely. Yvonne supports ongoing reviews as your life changes—new home, new baby, new business, or updated priorities.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ZH -->
-      <div data-lang-block="zh" style="display:none">
-        <div class="section__head">
-          <h2>常見問題</h2>
-          <p class="muted" style="margin:0">先用幾個重點，幫你快速建立方向。</p>
-        </div>
-
-        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
-          <div class="card">
-            <h3 style="margin-top:0">單身也需要人壽保險嗎？</h3>
-            <p class="muted">
-              需要與否取決於你的狀況。有些人會為了貸款、未來家庭規劃，或企業責任而提前安排。簡單聊一下就能更清楚。
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">保障額度要抓多少？</h3>
-            <p class="muted">
-              沒有一個適用所有人的固定答案。我們通常會看生活費、負債、需要照顧的人，以及希望支撐的時間長度，再對應預算規劃。
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">晚點再買會更貴嗎？</h3>
-            <p class="muted">
-              保費往往與年齡與健康狀況有關。越早規劃通常選擇更多，但我們也會以你目前的狀況為基礎，找出可行方案。
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">之後可以再檢視調整嗎？</h3>
-            <p class="muted">
-              當然可以。買房、生小孩、換工作或創業後，都很適合做保單檢視。Yvonne 也會提供長期支持與更新建議。
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin-top:18px">
-        <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=Life%20insurance%20chat">Get in touch</a>
-        <a class="btn" href="policy-review.html" style="margin-left:10px">Policy review</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- =============== Compliance note =============== -->
-  <section class="section">
-    <div class="container">
-      <div class="card">
-        <p class="tiny muted" style="margin:0">
-          <strong>Important information:</strong>
-          Financial advice is provided under Financial Advice Provider (FAP): <strong>ICARE</strong> (FSP number: <strong>ABCD1234</strong>).
-          The external dispute resolution scheme is <strong>FSCL</strong>.
-          Any complaints will be acknowledged and responded to within <strong>5 working days</strong>.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- =============== Unified Footer =============== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="footer__left">
-        <div class="brand brand--footer">
-          <span class="brand__mark"></span>
-          <span class="brand__text">
-            <strong>Yvonne Chen</strong>
-            <span data-i18n="header.subtitle">Life & Health Insurance Adviser • New Zealand</span>
-          </span>
-        </div>
-        <p class="tiny muted">© <span id="year"></span> Yvonne Chen</p>
-      </div>
-
+      <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED</p>
       <div class="footer__links">
-        <a href="life-insurance.html" data-i18n="nav.life">Life</a>
-        <a href="health-insurance.html" data-i18n="nav.health">Health</a>
-        <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
-        <a href="disclosure.html" data-i18n="nav.disclosure">Disclosure</a>
-        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
-        <a href="#top">Back to top ↑</a>
+        <a href="disclosure.html">Disclosure</a>
+        <a href="privacy.html">Privacy</a>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
-
-  <!-- Language block toggle (works with existing script.js) -->
-  <script>
-    (function(){
-      function currentLang(){
-        const saved = localStorage.getItem("site_lang");
-        return (saved === "zh") ? "zh" : "en";
-      }
-      function applyLangBlocks(){
-        const lang = currentLang();
-        document.querySelectorAll("[data-lang-block]").forEach(el => {
-          el.style.display = (el.getAttribute("data-lang-block") === lang) ? "" : "none";
-        });
-      }
-      applyLangBlocks();
-
-      // Observe html lang attribute changes triggered by script.js
-      const obs = new MutationObserver(applyLangBlocks);
-      obs.observe(document.documentElement, { attributes:true, attributeFilter:["lang"] });
-
-      // Also handle clicks (in case of no mutation in some browsers)
-      document.addEventListener("click", (e) => {
-        if (e.target.closest(".lang__btn")) setTimeout(applyLangBlocks, 0);
-      });
-    })();
-  </script>
 </body>
 </html>

@@ -3,433 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- SEO (script.js 會依語言/頁面覆寫 title/description；這裡先放合理預設) -->
-  <title>Health Insurance | Yvonne Chen (NZ)</title>
-  <meta name="description" content="Health insurance guidance in New Zealand — understand your options and build cover that fits your needs and budget." />
-
-  <!-- Canonical / OG -->
-  <link rel="canonical" href="https://yourdomain.co.nz/health-insurance.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Health Insurance | Yvonne Chen (NZ)" />
-  <meta property="og:description" content="Clear, practical health insurance guidance across New Zealand." />
-  <meta property="og:image" content="assets/og.jpg" />
-  <meta property="og:url" content="https://yourdomain.co.nz/health-insurance.html" />
-
+  <title>Health Insurance Advice | ICARE FINANCE SOLUTION LIMITED</title>
+  <meta name="description" content="Health insurance advice in New Zealand by ICARE FINANCE SOLUTION LIMITED." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body data-page="health">
-  <!-- =============== Unified Header =============== -->
   <header class="header" id="top">
     <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="Go to homepage">
-        <span class="brand__mark"></span>
-        <span class="brand__text">
-          <strong>Yvonne Chen</strong>
-          <!-- 你現有 script.js 有 nav.*，沒有 header.subtitle；這裡保持純文字不影響 -->
-          <span class="tiny muted" style="display:block; margin-top:2px;">
-            <span data-lang-inline="en">Life &amp; Health Insurance Adviser • New Zealand</span>
-            <span data-lang-inline="zh" style="display:none;">人壽與健康保險顧問 • 紐西蘭</span>
-          </span>
-        </span>
-      </a>
-
-      <nav class="nav" aria-label="Primary navigation">
-        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-
+      <a class="brand" href="index.html"><span class="brand__mark"></span><span class="brand__text"><strong>ICARE</strong><span>FINANCE SOLUTION LIMITED</span></span></a>
+      <nav class="nav">
+        <button class="nav__toggle" id="navToggle"><span></span><span></span><span></span></button>
         <div class="nav__menu" id="navMenu">
           <a href="index.html" data-i18n="nav.home">Home</a>
           <a href="life-insurance.html" data-i18n="nav.life">Life</a>
           <a href="health-insurance.html" data-i18n="nav.health">Health</a>
           <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
-
-          <!-- 新增頁面：先用 inline bilingual，不依賴 script.js 既有 i18n keys -->
-          <a href="disclosure.html">
-            <span data-lang-inline="en">Disclosure</span>
-            <span data-lang-inline="zh" style="display:none;">揭露聲明</span>
-          </a>
-          <a href="privacy.html">
-            <span data-lang-inline="en">Privacy</span>
-            <span data-lang-inline="zh" style="display:none;">隱私權政策</span>
-          </a>
-
-          <a class="btn btn--small" href="mailto:yvonnechen@me.com" data-i18n="nav.contact">Contact</a>
-
-          <div class="lang" role="group" aria-label="Language switch">
-            <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
-            <button class="lang__btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          <a href="disclosure.html">Disclosure</a>
+          <a href="privacy.html">Privacy</a>
+          <div class="lang">
+            <button class="lang__btn" data-lang="en">EN</button>
+            <button class="lang__btn" data-lang="zh">中文</button>
           </div>
         </div>
       </nav>
     </div>
   </header>
 
-  <!-- =============== Hero =============== -->
-  <section class="hero">
-    <div class="hero__bg" aria-hidden="true"></div>
-
-    <div class="container hero__inner">
-      <!-- EN -->
-      <div data-lang-block="en">
-        <div class="glass hero__panel">
-          <div class="kicker">Health Insurance</div>
-          <h1>More choice, more certainty — when health matters most.</h1>
-          <p class="lead">
-            Health insurance can help you access private care and reduce the stress of long waiting times.
-            Yvonne helps you understand what different policies typically cover, how to compare options, and how to structure cover that fits your needs and budget.
-          </p>
-
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=Health%20insurance%20enquiry">Email Yvonne</a>
-            <a class="btn" href="policy-review.html">Review my current cover</a>
-          </div>
-
-          <div class="trust" aria-label="Highlights">
-            <div class="trust__item">
-              <div class="trust__num">Clear</div>
-              <div class="trust__label">Plain-English policy comparisons</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__num">Practical</div>
-              <div class="trust__label">Built around your priorities</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__num">Supported</div>
-              <div class="trust__label">Help with claims & reviews</div>
-            </div>
-          </div>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="kicker" data-i18n="subpages.kicker.health"></p>
+        <h1 data-i18n="subpages.h1.health"></h1>
+        <p class="lead" data-i18n="subpages.lead.health"></p>
       </div>
+    </section>
+  </main>
 
-      <!-- ZH -->
-      <div data-lang-block="zh" style="display:none">
-        <div class="glass hero__panel">
-          <div class="kicker">健康保險</div>
-          <h1>在需要的時候，多一份選擇與確定感。</h1>
-          <p class="lead">
-            健康保險的價值，常在你真正需要醫療協助時才被看見——例如更彈性的私立醫療選擇、以及降低等待造成的壓力。
-            Yvonne 會用清楚好懂的方式，協助你理解不同保單通常涵蓋哪些項目、如何比較差異，並依你的需求與預算，規劃合適的保障組合。
-          </p>
-
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%9A%AA%E8%AB%AE%E8%A9%A2">Email 聯絡</a>
-            <a class="btn" href="policy-review.html">檢視我現有的保障</a>
-          </div>
-
-          <div class="trust" aria-label="重點">
-            <div class="trust__item">
-              <div class="trust__num">清楚</div>
-              <div class="trust__label">用白話比較保單差異</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__num">務實</div>
-              <div class="trust__label">依需求與預算安排</div>
-            </div>
-            <div class="trust__item">
-              <div class="trust__num">支持</div>
-              <div class="trust__label">理賠與檢視協助</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right-side panel (bilingual inline) -->
-      <aside class="glass">
-        <div class="kicker" style="margin-bottom:12px">
-          <span data-lang-inline="en">What health cover can help with</span>
-          <span data-lang-inline="zh" style="display:none;">健康保障常見可協助的方向</span>
-        </div>
-
-        <div class="grid" style="grid-template-columns:1fr; gap:12px">
-          <div class="card">
-            <strong>
-              <span data-lang-inline="en">Private treatment options</span>
-              <span data-lang-inline="zh" style="display:none;">私立醫療選擇</span>
-            </strong>
-            <p class="tiny muted" style="margin:8px 0 0">
-              <span data-lang-inline="en">More flexibility in where and when you get treated.</span>
-              <span data-lang-inline="zh" style="display:none;">在就醫地點與時程上更有彈性。</span>
-            </p>
-          </div>
-
-          <div class="card">
-            <strong>
-              <span data-lang-inline="en">Surgery & specialist pathways</span>
-              <span data-lang-inline="zh" style="display:none;">手術與專科流程</span>
-            </strong>
-            <p class="tiny muted" style="margin:8px 0 0">
-              <span data-lang-inline="en">Support for common private-care pathways, depending on policy terms.</span>
-              <span data-lang-inline="zh" style="display:none;">依保單條款，協助支援常見的私立醫療流程。</span>
-            </p>
-          </div>
-
-          <div class="card">
-            <strong>
-              <span data-lang-inline="en">Everyday health extras (optional)</span>
-              <span data-lang-inline="zh" style="display:none;">日常醫療附加（選配）</span>
-            </strong>
-            <p class="tiny muted" style="margin:8px 0 0">
-              <span data-lang-inline="en">Some plans include extras like optical/dental/physio — check limits and conditions.</span>
-              <span data-lang-inline="zh" style="display:none;">部分方案含視力/牙科/物理治療等，需留意額度與條件。</span>
-            </p>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- =============== Content sections =============== -->
-  <section class="section">
-    <div class="container">
-      <!-- EN -->
-      <div data-lang-block="en">
-        <div class="section__head">
-          <h2>How we make it simple</h2>
-          <p class="muted" style="margin:0">A clear process, so you know what you’re paying for.</p>
-        </div>
-
-        <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
-          <div class="card">
-            <h3 style="margin-top:0">1) Understand your priorities</h3>
-            <p class="muted">
-              We discuss what matters to you: private treatment access, budget, family needs, and any existing cover you already have.
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">2) Compare policies properly</h3>
-            <p class="muted">
-              Yvonne helps you compare policy wording, limits, exclusions, and optional add-ons—so the differences are truly clear.
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">3) Set up cover & review over time</h3>
-            <p class="muted">
-              We assist with applications and keep things on track. When life changes, we can review and adjust your cover.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ZH -->
-      <div data-lang-block="zh" style="display:none">
-        <div class="section__head">
-          <h2>我們如何把事情講清楚、做簡單</h2>
-          <p class="muted" style="margin:0">用清楚流程，讓你知道每一分保費的意義。</p>
-        </div>
-
-        <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
-          <div class="card">
-            <h3 style="margin-top:0">1) 先釐清你的重點</h3>
-            <p class="muted">
-              了解你最在意的是什麼：私立醫療彈性、預算、家庭需求，以及你目前已有的保障內容。
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">2) 真正把保單差異比清楚</h3>
-            <p class="muted">
-              協助比較條款用語、額度上限、除外責任、以及可選附加項，避免「看起來很像」但其實差很多。
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">3) 完成投保並長期檢視</h3>
-            <p class="muted">
-              協助處理投保流程與文件，並在你人生階段改變時（工作、家庭、預算）做保單檢視與調整。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--alt">
-    <div class="container">
-      <!-- EN -->
-      <div data-lang-block="en">
-        <div class="section__head">
-          <h2>Common questions</h2>
-          <p class="muted" style="margin:0">A few quick answers to help you feel confident.</p>
-        </div>
-
-        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
-          <div class="card">
-            <h3 style="margin-top:0">Is health insurance worth it in NZ?</h3>
-            <p class="muted">
-              Many people choose it for flexibility and peace of mind—especially around private treatment pathways.
-              The best fit depends on your priorities, budget, and existing arrangements.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 style="margin-top:0">What should I watch for when comparing plans?</h3>
-            <p class="muted">
-              Pay attention to policy wording, annual limits, exclusions, and waiting periods.
-              Yvonne can walk you through the fine print in plain language.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 style="margin-top:0">Can I change providers later?</h3>
-            <p class="muted">
-              Often yes, but it’s important to consider continuity, underwriting, and how pre-existing conditions are treated.
-              We’ll review the options carefully before you make changes.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 style="margin-top:0">What if I already have cover through work?</h3>
-            <p class="muted">
-              Great—let’s review what it includes and what it doesn’t.
-              Some people keep it as a base and add personal cover for better control and stability.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ZH -->
-      <div data-lang-block="zh" style="display:none">
-        <div class="section__head">
-          <h2>常見問題</h2>
-          <p class="muted" style="margin:0">先用幾個重點，幫你建立清楚概念。</p>
-        </div>
-
-        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
-          <div class="card">
-            <h3 style="margin-top:0">在紐西蘭，健康保險值得嗎？</h3>
-            <p class="muted">
-              不少人選擇健康保險，是因為想要更彈性的就醫選擇與安心感（尤其私立醫療流程）。
-              是否適合，仍取決於你的需求、預算與既有安排。
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 style="margin-top:0">比較方案時要注意哪些重點？</h3>
-            <p class="muted">
-              建議留意條款用語、年度額度上限、除外責任、以及等待期等。
-              Yvonne 可以用白話協助你把差異看懂。
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 style="margin-top:0">之後可以更換保險公司嗎？</h3>
-            <p class="muted">
-              通常可以，但需要留意保障延續性、核保結果，以及既有疾病（pre-existing conditions）可能帶來的影響。
-              我們會先完整評估，再做出合適決定。
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 style="margin-top:0">如果公司有團體保險，還需要另外買嗎？</h3>
-            <p class="muted">
-              很好——我們可以先檢視團體保險涵蓋內容與限制。
-              有些人會把團體保險當作基礎，再搭配個人保障以提升可控性與穩定性。
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin-top:18px">
-        <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=Health%20insurance%20chat">
-          <span data-lang-inline="en">Get in touch</span>
-          <span data-lang-inline="zh" style="display:none;">聯絡我</span>
-        </a>
-        <a class="btn" href="policy-review.html" style="margin-left:10px">
-          <span data-lang-inline="en">Policy review</span>
-          <span data-lang-inline="zh" style="display:none;">保單檢視</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- =============== Compliance note =============== -->
-  <section class="section">
-    <div class="container">
-      <div class="card">
-        <p class="tiny muted" style="margin:0">
-          <strong>Important information:</strong>
-          Financial advice is provided under Financial Advice Provider (FAP): <strong>ICARE</strong> (FSP number: <strong>ABCD1234</strong>).
-          The external dispute resolution scheme is <strong>FSCL</strong>.
-          Any complaints will be acknowledged and responded to within <strong>5 working days</strong>.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- =============== Unified Footer =============== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="footer__left">
-        <div class="brand brand--footer">
-          <span class="brand__mark"></span>
-          <span class="brand__text">
-            <strong>Yvonne Chen</strong>
-            <span class="tiny muted" style="display:block; margin-top:2px;">
-              <span data-lang-inline="en">Life &amp; Health Insurance Adviser • New Zealand</span>
-              <span data-lang-inline="zh" style="display:none;">人壽與健康保險顧問 • 紐西蘭</span>
-            </span>
-          </span>
-        </div>
-        <p class="tiny muted">© <span id="year"></span> Yvonne Chen</p>
-      </div>
-
+      <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED</p>
       <div class="footer__links">
-        <a href="life-insurance.html" data-i18n="nav.life">Life</a>
-        <a href="health-insurance.html" data-i18n="nav.health">Health</a>
-        <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
-
-        <a href="disclosure.html">
-          <span data-lang-inline="en">Disclosure</span>
-          <span data-lang-inline="zh" style="display:none;">揭露聲明</span>
-        </a>
-        <a href="privacy.html">
-          <span data-lang-inline="en">Privacy</span>
-          <span data-lang-inline="zh" style="display:none;">隱私權政策</span>
-        </a>
-
-        <a href="#top">
-          <span data-lang-inline="en">Back to top ↑</span>
-          <span data-lang-inline="zh" style="display:none;">回到頂部 ↑</span>
-        </a>
+        <a href="disclosure.html">Disclosure</a>
+        <a href="privacy.html">Privacy</a>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
-
-  <!-- Language block + inline toggle (works with existing script.js) -->
-  <script>
-    (function(){
-      function currentLang(){
-        const saved = localStorage.getItem("site_lang");
-        return (saved === "zh") ? "zh" : "en";
-      }
-      function applyLang(){
-        const lang = currentLang();
-
-        // long blocks
-        document.querySelectorAll("[data-lang-block]").forEach(el => {
-          el.style.display = (el.getAttribute("data-lang-block") === lang) ? "" : "none";
-        });
-
-        // inline spans
-        document.querySelectorAll("[data-lang-inline]").forEach(el => {
-          el.style.display = (el.getAttribute("data-lang-inline") === lang) ? "" : "none";
-        });
-      }
-
-      applyLang();
-
-      // Observe <html lang="..."> changes triggered by script.js
-      const obs = new MutationObserver(applyLang);
-      obs.observe(document.documentElement, { attributes:true, attributeFilter:["lang"] });
-
-      // Also handle direct clicks
-      document.addEventListener("click", (e) => {
-        if (e.target.closest(".lang__btn")) setTimeout(applyLang, 0);
-      });
-    })();
-  </script>
 </body>
 </html>

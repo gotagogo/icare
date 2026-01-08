@@ -3,34 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- SEO (script.js 會依語言/頁面覆寫 title/description；這裡先放合理預設) -->
-  <title>Privacy Policy | Yvonne Chen (NZ)</title>
-  <meta name="description" content="Privacy policy for Yvonne Chen’s website and services — how personal information is collected, used, stored and shared (New Zealand)." />
-
-  <!-- Canonical / OG -->
-  <link rel="canonical" href="https://yourdomain.co.nz/privacy.html" />
+  <title>Privacy Policy | ICARE FINANCE SOLUTION LIMITED</title>
+  <meta name="description" content="Privacy policy for ICARE FINANCE SOLUTION LIMITED." />
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:title" content="Privacy Policy | ICARE FINANCE SOLUTION LIMITED" />
+  <meta property="og:description" content="Privacy policy: how we collect, use, store, and protect personal information." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Privacy Policy | Yvonne Chen (NZ)" />
-  <meta property="og:description" content="How personal information is collected, used, stored and shared (New Zealand)." />
-  <meta property="og:image" content="assets/og.jpg" />
-  <meta property="og:url" content="https://yourdomain.co.nz/privacy.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"FinancialService",
+        "name":"ICARE FINANCE SOLUTION LIMITED",
+        "areaServed":"NZ",
+        "email":"yvonnechen@me.com",
+        "serviceType":["Life insurance","Health insurance","Insurance policy review","Privacy"],
+        "employee":{"@id":"#yvonne"}
+      },
+      {
+        "@type":"Person",
+        "@id":"#yvonne",
+        "name":"Yvonne Chen",
+        "jobTitle":"Insurance Broker",
+        "email":"yvonnechen@me.com",
+        "worksFor":{"@type":"Organization","name":"ICARE FINANCE SOLUTION LIMITED"}
+      }
+    ]
+  }
+  </script>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body data-page="privacy">
-  <!-- =============== Unified Header =============== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="pill">NZ • Insurance</span>
+        <span class="muted small">ICARE FINANCE SOLUTION LIMITED</span>
+      </div>
+      <div class="topbar__right">
+        <a class="toplink" href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Unified Header -->
   <header class="header" id="top">
     <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="Go to homepage">
+      <a class="brand" href="index.html">
         <span class="brand__mark"></span>
         <span class="brand__text">
-          <strong>Yvonne Chen</strong>
-          <span class="tiny muted" style="display:block; margin-top:2px;">
-            <span data-lang-inline="en">Life &amp; Health Insurance Adviser • New Zealand</span>
-            <span data-lang-inline="zh" style="display:none;">人壽與健康保險顧問 • 紐西蘭</span>
-          </span>
+          <strong>ICARE</strong>
+          <span>FINANCE SOLUTION LIMITED</span>
         </span>
       </a>
 
@@ -44,17 +71,9 @@
           <a href="life-insurance.html" data-i18n="nav.life">Life</a>
           <a href="health-insurance.html" data-i18n="nav.health">Health</a>
           <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
-
-          <a href="disclosure.html">
-            <span data-lang-inline="en">Disclosure</span>
-            <span data-lang-inline="zh" style="display:none;">揭露聲明</span>
-          </a>
-          <a href="privacy.html">
-            <span data-lang-inline="en">Privacy</span>
-            <span data-lang-inline="zh" style="display:none;">隱私權政策</span>
-          </a>
-
-          <a class="btn btn--small" href="mailto:yvonnechen@me.com" data-i18n="nav.contact">Contact</a>
+          <a href="disclosure.html">Disclosure</a>
+          <a href="privacy.html">Privacy</a>
+          <a class="btn btn--small" href="index.html#contact" data-i18n="nav.contact">Contact</a>
 
           <div class="lang" role="group" aria-label="Language switch">
             <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
@@ -65,424 +84,75 @@
     </div>
   </header>
 
-  <!-- =============== Hero =============== -->
-  <section class="hero">
-    <div class="hero__bg" aria-hidden="true"></div>
-
-    <div class="container hero__inner">
-      <!-- EN -->
-      <div data-lang-block="en">
-        <div class="glass hero__panel">
-          <div class="kicker">Privacy Policy</div>
-          <h1>How we handle your personal information.</h1>
-          <p class="lead">
-            This policy explains what information may be collected, how it may be used, who it may be shared with,
-            and the choices you have. If you have questions, please contact Yvonne.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=Privacy%20question">Ask a question</a>
-            <a class="btn" href="disclosure.html">Disclosure statement</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- ZH -->
-      <div data-lang-block="zh" style="display:none">
-        <div class="glass hero__panel">
-          <div class="kicker">隱私權政策</div>
-          <h1>我們如何處理你的個人資訊</h1>
-          <p class="lead">
-            本政策說明可能蒐集哪些資訊、如何使用、可能與誰分享，以及你擁有哪些權利與選擇。
-            若你有任何疑問，歡迎直接聯絡 Yvonne。
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="mailto:yvonnechen@me.com?subject=%E9%9A%B1%E7%A7%81%E6%AC%8A%E6%94%BF%E7%AD%96%E5%95%8F%E9%A1%8C">詢問問題</a>
-            <a class="btn" href="disclosure.html">揭露聲明</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right-side summary -->
-      <aside class="glass">
-        <div class="kicker" style="margin-bottom:12px">
-          <span data-lang-inline="en">Quick summary</span>
-          <span data-lang-inline="zh" style="display:none;">重點摘要</span>
-        </div>
-
-        <div class="grid" style="grid-template-columns:1fr; gap:12px">
-          <div class="card">
-            <strong>
-              <span data-lang-inline="en">What we collect</span>
-              <span data-lang-inline="zh" style="display:none;">蒐集內容</span>
-            </strong>
-            <p class="tiny muted" style="margin:8px 0 0">
-              <span data-lang-inline="en">Contact details and information needed to provide advice.</span>
-              <span data-lang-inline="zh" style="display:none;">聯絡資訊與提供建議所需資料。</span>
-            </p>
-          </div>
-
-          <div class="card">
-            <strong>
-              <span data-lang-inline="en">Why we collect it</span>
-              <span data-lang-inline="zh" style="display:none;">蒐集目的</span>
-            </strong>
-            <p class="tiny muted" style="margin:8px 0 0">
-              <span data-lang-inline="en">To communicate, provide advice, arrange cover, and support claims/reviews.</span>
-              <span data-lang-inline="zh" style="display:none;">聯繫、提供建議、協助投保、理賠與檢視服務。</span>
-            </p>
-          </div>
-
-          <div class="card">
-            <strong>
-              <span data-lang-inline="en">Your choices</span>
-              <span data-lang-inline="zh" style="display:none;">你的權利</span>
-            </strong>
-            <p class="tiny muted" style="margin:8px 0 0">
-              <span data-lang-inline="en">Request access/corrections and ask questions anytime.</span>
-              <span data-lang-inline="zh" style="display:none;">可要求查閱/更正資料，並隨時提出疑問。</span>
-            </p>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- =============== Content =============== -->
-  <section class="section">
-    <div class="container">
-      <!-- EN -->
-      <div data-lang-block="en">
+  <main>
+    <section class="section">
+      <div class="container">
         <div class="section__head">
-          <h2>1. Scope</h2>
-          <p class="muted" style="margin:0">Who this policy applies to.</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            This Privacy Policy applies to information collected through this website and through communications with Yvonne Chen
-            (for example via email, phone, WeChat, or during the advice and application process).
-          </p>
+          <h1 data-i18n="privacy.title">Privacy Policy</h1>
+          <p class="muted" data-i18n="privacy.subtitle">This policy explains how ICARE FINANCE SOLUTION LIMITED collects, uses, discloses, and protects personal information.</p>
         </div>
 
-        <div class="section__head" style="margin-top:22px;">
-          <h2>2. Information we may collect</h2>
-          <p class="muted" style="margin:0">Types of information we may need.</p>
-        </div>
-        <div class="card">
-          <ul class="muted" style="margin:0; padding-left:18px;">
-            <li>Contact details (name, email, phone, address)</li>
-            <li>Information you provide when asking for advice (for example family situation, financial commitments, cover needs)</li>
-            <li>Insurance-related information required to arrange cover or support claims (may include health information where relevant)</li>
-            <li>Website usage information (limited technical data such as device/browser and pages viewed)</li>
-          </ul>
+        <div class="grid quotes">
+          <figure class="quote">
+            <blockquote data-i18n="privacy.collect.h">What we collect</blockquote>
+            <figcaption data-i18n="privacy.collect.b">...</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote data-i18n="privacy.use.h">How we use your information</blockquote>
+            <figcaption data-i18n="privacy.use.b">...</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote data-i18n="privacy.share.h">Who we share it with</blockquote>
+            <figcaption data-i18n="privacy.share.b">...</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote data-i18n="privacy.storage.h">Storage & security</blockquote>
+            <figcaption data-i18n="privacy.storage.b">...</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote data-i18n="privacy.rights.h">Access & correction</blockquote>
+            <figcaption data-i18n="privacy.rights.b">...</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote data-i18n="privacy.contact.h">Contact</blockquote>
+            <figcaption data-i18n="privacy.contact.b">...</figcaption>
+          </figure>
         </div>
 
-        <div class="section__head" style="margin-top:22px;">
-          <h2>3. How we use your information</h2>
-          <p class="muted" style="margin:0">What we do with the information collected.</p>
-        </div>
-        <div class="card">
-          <ul class="muted" style="margin:0; padding-left:18px;">
-            <li>To respond to enquiries and communicate with you</li>
-            <li>To provide financial advice and explain insurance options</li>
-            <li>To help apply for insurance and liaise with insurers where needed</li>
-            <li>To support policy reviews and claims assistance</li>
-            <li>To meet legal and regulatory obligations in New Zealand</li>
-          </ul>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>4. Who we may share information with</h2>
-          <p class="muted" style="margin:0">Where sharing is necessary.</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            We may share your information with relevant parties where necessary to provide services, such as:
-          </p>
-          <ul class="muted" style="margin:10px 0 0; padding-left:18px;">
-            <li>Insurers and underwriting/claims teams (to arrange cover or support claims)</li>
-            <li>Service providers who support business operations (for example document storage, email, or IT services)</li>
-            <li>ICARE (the Financial Advice Provider) where required for compliance and oversight</li>
-            <li>Regulators or dispute resolution bodies where required by law or for complaint handling</li>
-          </ul>
-          <p class="muted" style="margin:10px 0 0">
-            We do not sell your personal information.
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>5. Storage and security</h2>
-          <p class="muted" style="margin:0">How we protect information.</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            We take reasonable steps to protect your personal information from loss, misuse, unauthorised access, disclosure, or alteration.
-            Information may be stored electronically and/or in physical form, and access is limited to authorised persons where possible.
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>6. Retention</h2>
-          <p class="muted" style="margin:0">How long information may be kept.</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            We keep personal information only for as long as necessary to provide services and meet legal or regulatory requirements.
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>7. Access and correction</h2>
-          <p class="muted" style="margin:0">Your rights.</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            You may request access to, or correction of, your personal information. To do so, please contact
-            <a href="mailto:yvonnechen@me.com">yvonnechen@me.com</a>.
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>8. Complaints</h2>
-          <p class="muted" style="margin:0">If you have concerns about privacy.</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            If you believe your privacy has been breached, please contact Yvonne first so we can investigate and respond.
-            If you are not satisfied, you may raise your complaint through the applicable external processes as described in the
-            <a href="disclosure.html">Disclosure Statement</a>.
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>9. Updates</h2>
-          <p class="muted" style="margin:0">Changes to this policy.</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            We may update this Privacy Policy from time to time. The latest version will be published on this page.
-          </p>
-        </div>
-
-        <div class="card" style="margin-top:14px;">
-          <p class="tiny muted" style="margin:0">
-            <strong>Important:</strong> The information on this website is general in nature and does not take into account your personal circumstances.
-            Please seek personalised advice before making insurance decisions.
-          </p>
-        </div>
+        <p class="tiny muted" style="margin-top:18px;" data-i18n="privacy.updated">Last updated: 2026</p>
       </div>
+    </section>
+  </main>
 
-      <!-- ZH -->
-      <div data-lang-block="zh" style="display:none">
-        <div class="section__head">
-          <h2>1. 適用範圍</h2>
-          <p class="muted" style="margin:0">本政策適用於哪些情境。</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            本隱私權政策適用於透過本網站蒐集的資訊，以及你與 Yvonne Chen 之間的溝通與服務過程
-            （例如 email、電話、WeChat、理財建議與投保流程等）。
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>2. 我們可能蒐集的資訊</h2>
-          <p class="muted" style="margin:0">為提供服務可能需要的資訊類型。</p>
-        </div>
-        <div class="card">
-          <ul class="muted" style="margin:0; padding-left:18px;">
-            <li>聯絡資訊（姓名、email、電話、地址等）</li>
-            <li>你在諮詢時提供的資訊（例如家庭狀況、財務承擔、保障需求）</li>
-            <li>為協助投保或理賠所需的保險相關資訊（視情況可能包含健康資訊）</li>
-            <li>網站使用資訊（有限的技術資料，例如裝置/瀏覽器與瀏覽頁面）</li>
-          </ul>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>3. 我們如何使用你的資訊</h2>
-          <p class="muted" style="margin:0">蒐集資訊的用途。</p>
-        </div>
-        <div class="card">
-          <ul class="muted" style="margin:0; padding-left:18px;">
-            <li>回覆詢問並與你聯繫</li>
-            <li>提供理財建議並說明保險選項</li>
-            <li>協助投保並在需要時與保險公司溝通</li>
-            <li>支援保單檢視與理賠協助</li>
-            <li>遵循紐西蘭法律與監管要求</li>
-          </ul>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>4. 我們可能與誰分享資訊</h2>
-          <p class="muted" style="margin:0">在必要情況下的分享。</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            為提供服務，我們可能在必要範圍內與相關單位分享你的資訊，例如：
-          </p>
-          <ul class="muted" style="margin:10px 0 0; padding-left:18px;">
-            <li>保險公司與核保／理賠團隊（用於投保或理賠處理）</li>
-            <li>支援營運的服務供應商（例如文件儲存、email 或 IT 服務）</li>
-            <li>ICARE（Financial Advice Provider），用於合規與監督需求</li>
-            <li>依法要求或處理申訴/爭議時可能涉及的監管機構或爭議處理單位</li>
-          </ul>
-          <p class="muted" style="margin:10px 0 0">
-            我們不會販售你的個人資訊。
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>5. 儲存與安全</h2>
-          <p class="muted" style="margin:0">我們如何保護資訊。</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            我們採取合理措施，保護你的個人資訊免於遺失、濫用、未經授權的存取、揭露或更改。
-            資訊可能以電子或紙本形式保存，並盡可能限制只有授權人員可存取。
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>6. 保存期間</h2>
-          <p class="muted" style="margin:0">資訊可能保存多久。</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            我們僅在提供服務及符合法律/監管要求所需期間內保存個人資訊。
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>7. 查閱與更正</h2>
-          <p class="muted" style="margin:0">你的權利。</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            你可要求查閱或更正你的個人資訊。請聯絡
-            <a href="mailto:yvonnechen@me.com">yvonnechen@me.com</a>。
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>8. 申訴</h2>
-          <p class="muted" style="margin:0">若你對隱私處理有疑慮。</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            若你認為你的隱私遭到侵害，請先聯絡 Yvonne 以便我們調查並回覆。
-            若你對處理結果仍不滿意，可依 <a href="disclosure.html">揭露聲明</a> 中所述流程進一步提出申訴。
-          </p>
-        </div>
-
-        <div class="section__head" style="margin-top:22px;">
-          <h2>9. 政策更新</h2>
-          <p class="muted" style="margin:0">本政策可能變更。</p>
-        </div>
-        <div class="card">
-          <p class="muted" style="margin:0">
-            我們可能不定期更新本隱私權政策；最新版本將發布於此頁面。
-          </p>
-        </div>
-
-        <div class="card" style="margin-top:14px;">
-          <p class="tiny muted" style="margin:0">
-            <strong>提醒：</strong> 本網站內容僅供一般資訊參考，未考量你的個人狀況。做出保險決策前，請先取得個人化建議。
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =============== Compliance note (consistent) =============== -->
-  <section class="section">
-    <div class="container">
-      <div class="card">
-        <p class="tiny muted" style="margin:0">
-          <strong>Important information:</strong>
-          Financial advice is provided under Financial Advice Provider (FAP): <strong>ICARE</strong> (FSP number: <strong>ABCD1234</strong>).
-          The external dispute resolution scheme is <strong>FSCL</strong>.
-          Any complaints will be acknowledged and responded to within <strong>5 working days</strong>.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- =============== Unified Footer =============== -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__left">
         <div class="brand brand--footer">
           <span class="brand__mark"></span>
           <span class="brand__text">
-            <strong>Yvonne Chen</strong>
-            <span class="tiny muted" style="display:block; margin-top:2px;">
-              <span data-lang-inline="en">Life &amp; Health Insurance Adviser • New Zealand</span>
-              <span data-lang-inline="zh" style="display:none;">人壽與健康保險顧問 • 紐西蘭</span>
-            </span>
+            <strong>ICARE</strong>
+            <span>FINANCE SOLUTION LIMITED</span>
           </span>
         </div>
-        <p class="tiny muted">© <span id="year"></span> Yvonne Chen</p>
+        <p class="tiny muted">© <span id="year"></span> ICARE FINANCE SOLUTION LIMITED</p>
       </div>
 
       <div class="footer__links">
-        <a href="life-insurance.html" data-i18n="nav.life">Life</a>
-        <a href="health-insurance.html" data-i18n="nav.health">Health</a>
-        <a href="policy-review.html" data-i18n="nav.review">Policy Review</a>
-
-        <a href="disclosure.html">
-          <span data-lang-inline="en">Disclosure</span>
-          <span data-lang-inline="zh" style="display:none;">揭露聲明</span>
-        </a>
-        <a href="privacy.html">
-          <span data-lang-inline="en">Privacy</span>
-          <span data-lang-inline="zh" style="display:none;">隱私權政策</span>
-        </a>
-
-        <a href="#top">
-          <span data-lang-inline="en">Back to top ↑</span>
-          <span data-lang-inline="zh" style="display:none;">回到頂部 ↑</span>
-        </a>
+        <a href="life-insurance.html">Life</a>
+        <a href="health-insurance.html">Health</a>
+        <a href="policy-review.html">Policy Review</a>
+        <a href="disclosure.html">Disclosure</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#top">Back to top ↑</a>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
-
-  <!-- Language block + inline toggle (works with existing script.js) -->
-  <script>
-    (function(){
-      function currentLang(){
-        const saved = localStorage.getItem("site_lang");
-        return (saved === "zh") ? "zh" : "en";
-      }
-      function applyLang(){
-        const lang = currentLang();
-
-        // long blocks
-        document.querySelectorAll("[data-lang-block]").forEach(el => {
-          el.style.display = (el.getAttribute("data-lang-block") === lang) ? "" : "none";
-        });
-
-        // inline spans
-        document.querySelectorAll("[data-lang-inline]").forEach(el => {
-          el.style.display = (el.getAttribute("data-lang-inline") === lang) ? "" : "none";
-        });
-
-        // align html lang
-        document.documentElement.lang = (lang === "zh") ? "zh-Hant" : "en-NZ";
-      }
-
-      applyLang();
-
-      const obs = new MutationObserver(applyLang);
-      obs.observe(document.documentElement, { attributes:true, attributeFilter:["lang"] });
-
-      document.addEventListener("click", (e) => {
-        if (e.target.closest(".lang__btn")) setTimeout(applyLang, 0);
-      });
-
-      const y = document.getElementById("year");
-      if (y) y.textContent = new Date().getFullYear();
-    })();
-  </script>
 </body>
 </html>
